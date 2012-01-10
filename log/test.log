@@ -1085,3 +1085,431 @@ Rendered layouts/_stylesheets.html.erb (1.3ms)
 Rendered layouts/_header.html.erb (1.9ms)
 Rendered layouts/_footer.html.erb (1.7ms)
 Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (1.8ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'user@example.com', '2012-01-10 16:03:35.443152', '2012-01-10 16:03:35.443152', 'a23aaba3c5352d33183d84f97b967a312e4add96a5cad58cdabd3c0ef4c176bf', 'ba22aabcec6ac7955cfbb297d0ab077283673a2c97e9f7ced32c2a7e3dca0a53')[0m
+  [1m[35mSQL (1.6ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@foo.com')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('THE_USER@foo.bar.org')) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('first.last@foo.ru')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@foo,com')) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user_at_foo.org')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example.user@foo.')) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mAREL (1.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'user@example.com', '2012-01-10 16:03:35.780989', '2012-01-10 16:03:35.780989', 'a23aaba3c5352d33183d84f97b967a312e4add96a5cad58cdabd3c0ef4c176bf', 'ba22aabcec6ac7955cfbb297d0ab077283673a2c97e9f7ced32c2a7e3dca0a53')
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('USER@EXAMPLE.COM')) LIMIT 1
+  [1m[36mAREL (8.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'USER@EXAMPLE.COM', '2012-01-10 16:03:35.800777', '2012-01-10 16:03:35.800777', 'a23aaba3c5352d33183d84f97b967a312e4add96a5cad58cdabd3c0ef4c176bf', 'ba22aabcec6ac7955cfbb297d0ab077283673a2c97e9f7ced32c2a7e3dca0a53')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'user@example.com', '2012-01-10 16:03:35.885475', '2012-01-10 16:03:35.885475', 'a23aaba3c5352d33183d84f97b967a312e4add96a5cad58cdabd3c0ef4c176bf', 'ba22aabcec6ac7955cfbb297d0ab077283673a2c97e9f7ced32c2a7e3dca0a53')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'user@example.com', '2012-01-10 16:03:35.897257', '2012-01-10 16:03:35.897257', 'a23aaba3c5352d33183d84f97b967a312e4add96a5cad58cdabd3c0ef4c176bf', 'ba22aabcec6ac7955cfbb297d0ab077283673a2c97e9f7ced32c2a7e3dca0a53')
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mAREL (1.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'user@example.com', '2012-01-10 16:03:35.915539', '2012-01-10 16:03:35.915539', 'a23aaba3c5352d33183d84f97b967a312e4add96a5cad58cdabd3c0ef4c176bf', 'ba22aabcec6ac7955cfbb297d0ab077283673a2c97e9f7ced32c2a7e3dca0a53')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mAREL (1.4ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'user@example.com', '2012-01-10 16:03:35.928072', '2012-01-10 16:03:35.928072', 'a23aaba3c5352d33183d84f97b967a312e4add96a5cad58cdabd3c0ef4c176bf', 'ba22aabcec6ac7955cfbb297d0ab077283673a2c97e9f7ced32c2a7e3dca0a53')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mAREL (1.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'user@example.com', '2012-01-10 16:03:35.945849', '2012-01-10 16:03:35.945849', 'a23aaba3c5352d33183d84f97b967a312e4add96a5cad58cdabd3c0ef4c176bf', 'ba22aabcec6ac7955cfbb297d0ab077283673a2c97e9f7ced32c2a7e3dca0a53')
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'user@example.com', '2012-01-10 16:03:36.023184', '2012-01-10 16:03:36.023184', 'ec3e5b61e95f53338c7e85849158117e0a5758a2950827666e09cd396ffb42b3', '475e2c91a4727e68f8802b14dc15f8b493d869250ac91637ebae5dfd275950a9')[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'bar@foo.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mAREL (0.7ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'user@example.com', '2012-01-10 16:03:36.037624', '2012-01-10 16:03:36.037624', 'ec3e5b61e95f53338c7e85849158117e0a5758a2950827666e09cd396ffb42b3', '475e2c91a4727e68f8802b14dc15f8b493d869250ac91637ebae5dfd275950a9')
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (3.4ms)
+Rendered layouts/_footer.html.erb (2.7ms)
+Rendered pages/home.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 29.9ms)
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+Rendered layouts/_header.html.erb (1.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (6.4ms)
+Rendered layouts/_header.html.erb (1.5ms)
+Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered layouts/_footer.html.erb (2.5ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (1.9ms)
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (5.4ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (2.4ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1
+  [1m[36mAREL (0.9ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-10 16:03:36.772736', '2012-01-10 16:03:36.772736', 'ec3e5b61e95f53338c7e85849158117e0a5758a2950827666e09cd396ffb42b3', '475e2c91a4727e68f8802b14dc15f8b493d869250ac91637ebae5dfd275950a9')[0m
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>#<User id: 1, name: "Alex Korzun", email: "korzun.alex@mail.ru", created_at: "2012-01-10 16:03:36", updated_at: "2012-01-10 16:03:36", encrypted_password: "ec3e5b61e95f53338c7e85849158117e0a5758a2950827666e0...", salt: "475e2c91a4727e68f8802b14dc15f8b493d869250ac91637eba...">}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.1ms)
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 1.7ms)
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1[0m
+  [1m[35mAREL (2.4ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-10 16:03:36.952125', '2012-01-10 16:03:36.952125', 'ec3e5b61e95f53338c7e85849158117e0a5758a2950827666e09cd396ffb42b3', '475e2c91a4727e68f8802b14dc15f8b493d869250ac91637ebae5dfd275950a9')
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>#<User id: 1, name: "Alex Korzun", email: "korzun.alex@mail.ru", created_at: "2012-01-10 16:03:36", updated_at: "2012-01-10 16:03:36", encrypted_password: "ec3e5b61e95f53338c7e85849158117e0a5758a2950827666e0...", salt: "475e2c91a4727e68f8802b14dc15f8b493d869250ac91637eba...">}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered layouts/_header.html.erb (2.1ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 3.1ms)
+  [1m[35mSQL (0.6ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-10 16:03:37.019712', '2012-01-10 16:03:37.019712', '660e426d252af762bb1329834403817c3ec34063054d979cbb372762ad359c1a', 'fc820c06884ab6a0e84e9b5738a2883405ad65c87556a8e48d6a866b6b4d29ce')[0m
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>#<User id: 1, name: "Alex Korzun", email: "korzun.alex@mail.ru", created_at: "2012-01-10 16:03:37", updated_at: "2012-01-10 16:03:37", encrypted_password: "660e426d252af762bb1329834403817c3ec34063054d979cbb3...", salt: "fc820c06884ab6a0e84e9b5738a2883405ad65c87556a8e48d6...">}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 19ms (Views: 12.9ms | ActiveRecord: 1.6ms)
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1[0m
+  [1m[35mAREL (1.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-10 16:03:37.081866', '2012-01-10 16:03:37.081866', '660e426d252af762bb1329834403817c3ec34063054d979cbb372762ad359c1a', 'fc820c06884ab6a0e84e9b5738a2883405ad65c87556a8e48d6a866b6b4d29ce')
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>#<User id: 1, name: "Alex Korzun", email: "korzun.alex@mail.ru", created_at: "2012-01-10 16:03:37", updated_at: "2012-01-10 16:03:37", encrypted_password: "660e426d252af762bb1329834403817c3ec34063054d979cbb3...", salt: "fc820c06884ab6a0e84e9b5738a2883405ad65c87556a8e48d6...">}
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (1.4ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 3.1ms)
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-10 16:03:37.131940', '2012-01-10 16:03:37.131940', '660e426d252af762bb1329834403817c3ec34063054d979cbb372762ad359c1a', 'fc820c06884ab6a0e84e9b5738a2883405ad65c87556a8e48d6a866b6b4d29ce')[0m
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>#<User id: 1, name: "Alex Korzun", email: "korzun.alex@mail.ru", created_at: "2012-01-10 16:03:37", updated_at: "2012-01-10 16:03:37", encrypted_password: "660e426d252af762bb1329834403817c3ec34063054d979cbb3...", salt: "fc820c06884ab6a0e84e9b5738a2883405ad65c87556a8e48d6...">}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (1.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 1.4ms)
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.2ms)
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered layouts/_header.html.erb (1.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (19.6ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (1.5ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 135ms (Views: 35.6ms | ActiveRecord: 0.8ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35mSQL (0.7ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (18.1ms)
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 63ms (Views: 33.8ms | ActiveRecord: 0.9ms)
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (81.8ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (1.6ms)
+Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 128ms (Views: 97.0ms | ActiveRecord: 0.4ms)
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mAREL (5.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('New User', 'user@example.com', '2012-01-10 16:03:37.824580', '2012-01-10 16:03:37.824580', '660e426d252af762bb1329834403817c3ec34063054d979cbb372762ad359c1a', 'fc820c06884ab6a0e84e9b5738a2883405ad65c87556a8e48d6a866b6b4d29ce')
+Redirected to http://test.host/users/1
+Completed 302 Found in 15ms
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mAREL (0.9ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('New User', 'user@example.com', '2012-01-10 16:03:37.877111', '2012-01-10 16:03:37.877111', '660e426d252af762bb1329834403817c3ec34063054d979cbb372762ad359c1a', 'fc820c06884ab6a0e84e9b5738a2883405ad65c87556a8e48d6a866b6b4d29ce')[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 16ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-10 19:03:37 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (2.2ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2012-01-10 19:03:37 +0300
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+Rendered layouts/_header.html.erb (1.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2012-01-10 19:03:38 +0300
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (1.9ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2012-01-10 19:03:38 +0300
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (2.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-10 19:03:38 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.2ms)
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+Rendered layouts/_header.html.erb (1.5ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-10 19:03:38 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.7ms)
+Rendered layouts/_header.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2012-01-10 19:03:38 +0300
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (1.4ms)
+Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2012-01-10 19:03:38 +0300
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (3.7ms)
+Rendered layouts/_header.html.erb (2.4ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2012-01-10 19:03:38 +0300
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-10 19:03:38 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (4.2ms)
+Rendered layouts/_header.html.erb (1.5ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-10 19:03:38 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.2ms)
+Rendered layouts/_stylesheets.html.erb (1.5ms)
+Rendered layouts/_header.html.erb (1.4ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (1.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-10 16:13:15.376605', '2012-01-10 16:13:15.376605', 'b116ae2624c6f7fc9ab0c62726fc8a84d41c1bdde69f147d0f6b0834a03c3340', 'f0d7c2592dc5700241a5484d4f096b1111084f0c4ede02a6ad336b81bba042a9')[0m
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>#<User id: 1, name: "Alex Korzun", email: "korzun.alex@mail.ru", created_at: "2012-01-10 16:13:15", updated_at: "2012-01-10 16:13:15", encrypted_password: "b116ae2624c6f7fc9ab0c62726fc8a84d41c1bdde69f147d0f6...", salt: "f0d7c2592dc5700241a5484d4f096b1111084f0c4ede02a6ad3...">}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+Rendered layouts/_header.html.erb (3.2ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 32ms (Views: 28.1ms | ActiveRecord: 2.9ms)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-10 16:13:15.602587', '2012-01-10 16:13:15.602587', 'b116ae2624c6f7fc9ab0c62726fc8a84d41c1bdde69f147d0f6b0834a03c3340', 'f0d7c2592dc5700241a5484d4f096b1111084f0c4ede02a6ad336b81bba042a9')
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>#<User id: 1, name: "Alex Korzun", email: "korzun.alex@mail.ru", created_at: "2012-01-10 16:13:15", updated_at: "2012-01-10 16:13:15", encrypted_password: "b116ae2624c6f7fc9ab0c62726fc8a84d41c1bdde69f147d0f6...", salt: "f0d7c2592dc5700241a5484d4f096b1111084f0c4ede02a6ad3...">}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (1.8ms)
+Rendered layouts/_header.html.erb (1.5ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 1.6ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1
+  [1m[36mAREL (0.8ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-10 16:13:15.665503', '2012-01-10 16:13:15.665503', 'b116ae2624c6f7fc9ab0c62726fc8a84d41c1bdde69f147d0f6b0834a03c3340', 'f0d7c2592dc5700241a5484d4f096b1111084f0c4ede02a6ad336b81bba042a9')[0m
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>#<User id: 1, name: "Alex Korzun", email: "korzun.alex@mail.ru", created_at: "2012-01-10 16:13:15", updated_at: "2012-01-10 16:13:15", encrypted_password: "b116ae2624c6f7fc9ab0c62726fc8a84d41c1bdde69f147d0f6...", salt: "f0d7c2592dc5700241a5484d4f096b1111084f0c4ede02a6ad3...">}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+Rendered layouts/_header.html.erb (1.5ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 2.0ms)
+  [1m[36mSQL (3.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-10 16:13:15.725312', '2012-01-10 16:13:15.725312', 'b116ae2624c6f7fc9ab0c62726fc8a84d41c1bdde69f147d0f6b0834a03c3340', 'f0d7c2592dc5700241a5484d4f096b1111084f0c4ede02a6ad336b81bba042a9')
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>#<User id: 1, name: "Alex Korzun", email: "korzun.alex@mail.ru", created_at: "2012-01-10 16:13:15", updated_at: "2012-01-10 16:13:15", encrypted_password: "b116ae2624c6f7fc9ab0c62726fc8a84d41c1bdde69f147d0f6...", salt: "f0d7c2592dc5700241a5484d4f096b1111084f0c4ede02a6ad3...">}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 4.1ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-10 16:13:15.845261', '2012-01-10 16:13:15.845261', 'b116ae2624c6f7fc9ab0c62726fc8a84d41c1bdde69f147d0f6b0834a03c3340', 'f0d7c2592dc5700241a5484d4f096b1111084f0c4ede02a6ad336b81bba042a9')[0m
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>#<User id: 1, name: "Alex Korzun", email: "korzun.alex@mail.ru", created_at: "2012-01-10 16:13:15", updated_at: "2012-01-10 16:13:15", encrypted_password: "b116ae2624c6f7fc9ab0c62726fc8a84d41c1bdde69f147d0f6...", salt: "f0d7c2592dc5700241a5484d4f096b1111084f0c4ede02a6ad3...">}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 1.4ms)
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.6ms)
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered layouts/_header.html.erb (2.2ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 150ms (Views: 148.9ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.2ms)
+Rendered layouts/_stylesheets.html.erb (2.8ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (20.8ms)
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered layouts/_header.html.erb (3.2ms)
+Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 68ms (Views: 40.9ms | ActiveRecord: 0.7ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (16.5ms)
+Rendered layouts/_stylesheets.html.erb (1.8ms)
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 123ms (Views: 32.5ms | ActiveRecord: 0.6ms)
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (17.2ms)
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 74ms (Views: 33.5ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('New User', 'user@example.com', '2012-01-10 16:13:16.518314', '2012-01-10 16:13:16.518314', '50ffc2e66cd8df19cc43fe855f4c2fab4196b980755e91d4c91c546598e81d1a', 'd1cb2ecc6801967677d9ccd8217bec45b2a5f8400d3fdf6bdf5e0542d118ad81')
+Redirected to http://test.host/users/1
+Completed 302 Found in 11ms
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('New User', 'user@example.com', '2012-01-10 16:13:16.564089', '2012-01-10 16:13:16.564089', '50ffc2e66cd8df19cc43fe855f4c2fab4196b980755e91d4c91c546598e81d1a', 'd1cb2ecc6801967677d9ccd8217bec45b2a5f8400d3fdf6bdf5e0542d118ad81')[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 11ms
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-10 19:53:23 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (2.4ms)
+Rendered layouts/_stylesheets.html.erb (3.1ms)
+Rendered layouts/_header.html.erb (2.8ms)
+Rendered layouts/_footer.html.erb (2.9ms)
+Rendered users/new.html.erb within layouts/application (203.7ms)
+Completed 200 OK in 278ms (Views: 277.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-10 19:53:24 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (1.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'user@example.com', '2012-01-10 16:53:24.544929', '2012-01-10 16:53:24.544929', '7c3c3404315ddb5ef4122b9c41d4c09d881316d7d5a044bc4aecbb60aecdd1dc', '725fe7b861cc114415245cdbebf03f45b4e2d9cda784c6b2d632e827465a2300')
+Redirected to http://www.example.com/users/1
+Completed 302 Found in 201ms
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-10 19:53:24 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered users/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 19ms (Views: 13.8ms | ActiveRecord: 2.9ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-10 19:53:24 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.2ms)
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+Rendered layouts/_header.html.erb (2.2ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-10 19:53:24 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (87.4ms)
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 147ms (Views: 107.7ms | ActiveRecord: 0.2ms)
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m

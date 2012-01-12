@@ -2153,3 +2153,1327 @@ Completed 200 OK in 186ms (Views: 42.1ms | ActiveRecord: 0.7ms)
 DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
   [1m[36mUser Load (2.4ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
 DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-10 20:00:38 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (9.3ms)
+Rendered layouts/_header.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered pages/home.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-10 20:00:45 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.6ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (2.5ms)
+Rendered layouts/_footer.html.erb (2.7ms)
+Rendered users/new.html.erb within layouts/application (256.7ms)
+Completed 200 OK in 310ms (Views: 265.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-10 20:01:15 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"phQ3SCzQc9AWOK5wPqHd8vs7TNzr+qSS4yVSzyktu58=", "user"=>{"name"=>"foo bar", "email"=>"f@invalid", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSQL (9.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('f@invalid')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (33.3ms)
+Rendered layouts/_stylesheets.html.erb (2.1ms)
+Rendered layouts/_header.html.erb (2.4ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered users/new.html.erb within layouts/application (84.1ms)
+Completed 200 OK in 495ms (Views: 98.0ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-10 20:01:35 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"phQ3SCzQc9AWOK5wPqHd8vs7TNzr+qSS4yVSzyktu58=", "user"=>{"name"=>"foo bar", "email"=>"f@invalid", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mSQL (4.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('f@invalid')) LIMIT 1
+Rendered shared/_error_messages.html.erb (89.9ms)
+Rendered layouts/_stylesheets.html.erb (17.9ms)
+Rendered layouts/_header.html.erb (7.8ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered users/new.html.erb within layouts/application (222.7ms)
+Completed 200 OK in 623ms (Views: 264.4ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-10 20:02:52 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"phQ3SCzQc9AWOK5wPqHd8vs7TNzr+qSS4yVSzyktu58=", "user"=>{"name"=>"foo bar", "email"=>"f@invalid", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('f@invalid')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (30.5ms)
+Rendered layouts/_stylesheets.html.erb (11.2ms)
+Rendered layouts/_header.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Rendered users/new.html.erb within layouts/application (167.1ms)
+Completed 200 OK in 958ms (Views: 178.3ms | ActiveRecord: 1.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 19:43:12 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+Rendered layouts/_header.html.erb (21.6ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered pages/home.html.erb within layouts/application (85.3ms)
+Completed 200 OK in 119ms (Views: 118.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 19:43:28 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+Rendered layouts/_header.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered sessions/new.html.erb within layouts/application (294.1ms)
+Completed 200 OK in 317ms (Views: 316.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 19:49:46 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.4ms)
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+Rendered layouts/_header.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/new.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 152ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 19:50:43 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.3ms)
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+Rendered layouts/_header.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered users/new.html.erb within layouts/application (166.6ms)
+Completed 200 OK in 218ms (Views: 178.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 19:52:08 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.1ms)
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+Rendered layouts/_header.html.erb (2.6ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered users/new.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 123ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 19:52:12 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (2.2ms)
+Rendered layouts/_stylesheets.html.erb (3.7ms)
+Rendered layouts/_header.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (6.1ms)
+Rendered users/new.html.erb within layouts/application (131.0ms)
+Completed 200 OK in 174ms (Views: 140.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 19:52:42 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (4.0ms)
+Rendered layouts/_stylesheets.html.erb (2.9ms)
+Rendered layouts/_header.html.erb (2.6ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (60.9ms)
+Completed 200 OK in 108ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 19:53:17 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.3ms)
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+Rendered layouts/_header.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (2.3ms)
+Rendered users/new.html.erb within layouts/application (117.2ms)
+Completed 200 OK in 166ms (Views: 124.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 19:55:48 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.4ms)
+Rendered layouts/_stylesheets.html.erb (2.9ms)
+Rendered layouts/_header.html.erb (3.2ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Rendered users/new.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 101ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 19:56:10 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.3ms)
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered users/new.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 189ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 19:56:29 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.5ms)
+Rendered layouts/_stylesheets.html.erb (9.8ms)
+Rendered layouts/_header.html.erb (3.2ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Rendered users/new.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 98ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 19:56:47 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.2ms)
+Rendered layouts/_stylesheets.html.erb (13.8ms)
+Rendered layouts/_header.html.erb (229.9ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (458.2ms)
+Completed 200 OK in 556ms (Views: 482.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 19:57:00 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+Rendered layouts/_header.html.erb (2.9ms)
+Rendered layouts/_footer.html.erb (1.4ms)
+Rendered sessions/new.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:05:37 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+Rendered layouts/_header.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (3.4ms)
+Rendered sessions/new.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:06:24 +0300
+  Processing by SessionsController#new as HTML
+ERROR: compiling _app_views_sessions_new_html_erb___875960342_84167590_12361453 RAISED /home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:19: syntax error, unexpected ')'
+...", signup_path, size_of = 50% );@output_buffer.safe_concat('...
+...                               ^
+/home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+/home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_sessions_new_html_erb___875960342_84167590_12361453(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "sessions/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Sign in<h1>
+
+');@output_buffer.append=  form_for(:session, :url => sessions_path) do |f|@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <div class="field">
+       ');@output_buffer.append= ( f.label :email );@output_buffer.safe_concat('<br />
+       ');@output_buffer.append= ( f.text_field :email );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+
+    <div class="field">
+       ');@output_buffer.append= ( f.label :password );@output_buffer.safe_concat('<br />
+       ');@output_buffer.append= ( f.password_field :pasword );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+
+    <div class="actions">
+       ');@output_buffer.append= ( f.submit "Sign in" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+'); end 
+@output_buffer.safe_concat('
+<p>New user? ');@output_buffer.append= ( link_to "Sign up now!", signup_path, size_of = 50% );@output_buffer.safe_concat('</p>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `module_eval'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `compile'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `block in render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:436:in `_run__338191517__process_action__926168773__callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `block in action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:103:in `optimized_each'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/methodoverride.rb:24:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `block in call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/sendfile.rb:106:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/runtime.rb:17:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/lock.rb:13:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/lock.rb:13:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/content_length.rb:13:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/handler/webrick.rb:52:in `service'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered sessions/new.html.erb within layouts/application (186.0ms)
+Completed 500 Internal Server Error in 195ms
+
+ActionView::Template::Error (/home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:19: syntax error, unexpected ')'
+...", signup_path, size_of = 50% );@output_buffer.safe_concat('...
+...                               ^
+/home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+/home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:23: syntax error, unexpected keyword_end, expecting ')'):
+    16:     </div>
+    17: <% end %>
+    18: 
+    19: <p>New user? <%= link_to "Sign up now!", signup_path, size_of = 50% %></p>
+  
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.1ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:06:59 +0300
+  Processing by SessionsController#new as HTML
+ERROR: compiling _app_views_sessions_new_html_erb___875960342_89753830_12361453 RAISED /home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:19: syntax error, unexpected ')'
+...ow!", signup_path, size = 50% );@output_buffer.safe_concat('...
+...                               ^
+/home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+/home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_sessions_new_html_erb___875960342_89753830_12361453(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "sessions/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Sign in<h1>
+
+');@output_buffer.append=  form_for(:session, :url => sessions_path) do |f|@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <div class="field">
+       ');@output_buffer.append= ( f.label :email );@output_buffer.safe_concat('<br />
+       ');@output_buffer.append= ( f.text_field :email );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+
+    <div class="field">
+       ');@output_buffer.append= ( f.label :password );@output_buffer.safe_concat('<br />
+       ');@output_buffer.append= ( f.password_field :pasword );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+
+    <div class="actions">
+       ');@output_buffer.append= ( f.submit "Sign in" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+'); end 
+@output_buffer.safe_concat('
+<p>New user? ');@output_buffer.append= ( link_to "Sign up now!", signup_path, size = 50% );@output_buffer.safe_concat('</p>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `module_eval'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `compile'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `block in render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:436:in `_run__338191517__process_action__926168773__callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `block in action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:103:in `optimized_each'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/methodoverride.rb:24:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `block in call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/sendfile.rb:106:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/runtime.rb:17:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/lock.rb:13:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/lock.rb:13:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/content_length.rb:13:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/handler/webrick.rb:52:in `service'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (/home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:19: syntax error, unexpected ')'
+...ow!", signup_path, size = 50% );@output_buffer.safe_concat('...
+...                               ^
+/home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+/home/student/rails_projects/my_programm/app/views/sessions/new.html.erb:23: syntax error, unexpected keyword_end, expecting ')'):
+    16:     </div>
+    17: <% end %>
+    18: 
+    19: <p>New user? <%= link_to "Sign up now!", signup_path, size = 50% %></p>
+  
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.9ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.7ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:07:45 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (14.2ms)
+Rendered layouts/_header.html.erb (6.9ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered sessions/new.html.erb within layouts/application (87.4ms)
+Completed 200 OK in 132ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:09:04 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+Rendered layouts/_header.html.erb (2.9ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered sessions/new.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:09:35 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.1ms)
+Rendered layouts/_header.html.erb (3.7ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered sessions/new.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:10:17 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (10.5ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered sessions/new.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:10:46 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (3.6ms)
+Rendered layouts/_header.html.erb (2.2ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered sessions/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 20:11:26 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.3ms)
+Rendered layouts/_stylesheets.html.erb (18.4ms)
+Rendered layouts/_header.html.erb (6.8ms)
+Rendered layouts/_footer.html.erb (3.3ms)
+Rendered users/new.html.erb within layouts/application (93.1ms)
+Completed 200 OK in 235ms (Views: 105.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 20:11:30 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+Rendered layouts/_header.html.erb (10.8ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered pages/home.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 20:12:23 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.7ms)
+Rendered layouts/_header.html.erb (3.5ms)
+Rendered layouts/_footer.html.erb (4.1ms)
+Rendered pages/home.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 20:12:38 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.2ms)
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+Rendered layouts/_header.html.erb (3.6ms)
+Rendered layouts/_footer.html.erb (6.3ms)
+Rendered users/new.html.erb within layouts/application (65.7ms)
+Completed 200 OK in 185ms (Views: 74.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:12:51 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+Rendered layouts/_header.html.erb (6.0ms)
+Rendered layouts/_footer.html.erb (2.4ms)
+Rendered sessions/new.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 20:13:03 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+Rendered layouts/_header.html.erb (2.4ms)
+Rendered layouts/_footer.html.erb (2.4ms)
+Rendered pages/home.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 20:14:38 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (15.0ms)
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+Rendered layouts/_header.html.erb (2.4ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Rendered users/new.html.erb within layouts/application (258.5ms)
+Completed 200 OK in 422ms (Views: 276.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:14:47 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (3.6ms)
+Rendered layouts/_header.html.erb (7.0ms)
+Rendered layouts/_footer.html.erb (2.7ms)
+Rendered sessions/new.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:23:34 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+Rendered layouts/_header.html.erb (2.1ms)
+Rendered layouts/_footer.html.erb (2.8ms)
+Rendered sessions/new.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:23:55 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+Rendered layouts/_header.html.erb (2.4ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered sessions/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 20:24:50 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+Rendered layouts/_header.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered pages/home.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:25:59 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (3.3ms)
+Rendered layouts/_header.html.erb (3.9ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered sessions/new.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:26:41 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+Rendered layouts/_header.html.erb (6.7ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered sessions/new.html.erb within layouts/application (55.1ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 20:26:45 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (3.7ms)
+Rendered layouts/_header.html.erb (3.5ms)
+Rendered layouts/_footer.html.erb (9.3ms)
+Rendered pages/home.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 62ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 20:26:50 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (2.5ms)
+Rendered layouts/_stylesheets.html.erb (1.9ms)
+Rendered layouts/_header.html.erb (7.6ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (162.8ms)
+Completed 200 OK in 285ms (Views: 195.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 20:27:48 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (15.2ms)
+Rendered layouts/_stylesheets.html.erb (2.9ms)
+Rendered layouts/_header.html.erb (16.3ms)
+Rendered layouts/_footer.html.erb (10.8ms)
+Rendered users/new.html.erb within layouts/application (194.3ms)
+Completed 200 OK in 363ms (Views: 205.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 20:28:13 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (4.2ms)
+Rendered layouts/_header.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered sessions/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 20:46:25 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdPvAzdypir5VRDFiwxw65gKT7IHHfXbJ2GcyDcdqFs=", "session"=>{"email"=>"", "pasword"=>""}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.9ms)
+Rendered layouts/_header.html.erb (2.8ms)
+Rendered layouts/_footer.html.erb (2.9ms)
+Rendered sessions/new.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 146ms (Views: 35.1ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 22:02:21 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdPvAzdypir5VRDFiwxw65gKT7IHHfXbJ2GcyDcdqFs=", "session"=>{"email"=>"", "pasword"=>""}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (11.5ms)
+Rendered layouts/_footer.html.erb (9.3ms)
+Rendered sessions/new.html.erb within layouts/application (87.7ms)
+Completed 200 OK in 540ms (Views: 115.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 22:03:13 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdPvAzdypir5VRDFiwxw65gKT7IHHfXbJ2GcyDcdqFs=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (4.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (5.7ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered sessions/new.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 246ms (Views: 40.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 22:04:54 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (61.5ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered pages/home.html.erb within layouts/application (77.9ms)
+Completed 200 OK in 89ms (Views: 88.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 22:04:55 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.2ms)
+Rendered layouts/_stylesheets.html.erb (2.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (96.8ms)
+Rendered layouts/_footer.html.erb (5.2ms)
+Rendered users/new.html.erb within layouts/application (145.8ms)
+Completed 200 OK in 218ms (Views: 181.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-11 22:05:03 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdPvAzdypir5VRDFiwxw65gKT7IHHfXbJ2GcyDcdqFs=", "user"=>{"name"=>"A", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (24.3ms)
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (18.5ms)
+Rendered layouts/_footer.html.erb (6.1ms)
+Rendered users/new.html.erb within layouts/application (75.1ms)
+Completed 200 OK in 337ms (Views: 98.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-11 22:05:34 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdPvAzdypir5VRDFiwxw65gKT7IHHfXbJ2GcyDcdqFs=", "user"=>{"name"=>"Alex Korzun", "email"=>"korzun.alex@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1
+Rendered shared/_error_messages.html.erb (4.9ms)
+Rendered layouts/_stylesheets.html.erb (2.8ms)
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (94.3ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered users/new.html.erb within layouts/application (134.8ms)
+Completed 200 OK in 224ms (Views: 143.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-11 22:06:10 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.9ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (6.3ms)
+Rendered layouts/_footer.html.erb (1.3ms)
+Rendered users/show.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 110ms (Views: 40.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-11 22:08:16 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (5.4ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered users/show.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 175ms (Views: 37.5ms | ActiveRecord: 0.8ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mSQL (2.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (168.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255)) [0m
+  [1m[35mSQL (0.4ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (109.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (132.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (64.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mSQL (162.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120108180614')
+  [1m[36mSQL (111.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120105162911')[0m
+  [1m[35mSQL (66.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120105131521')
+  [1m[36mSQL (89.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120108153636')[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 22:15:07 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (3.4ms)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (3.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (136.5ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered pages/home.html.erb within layouts/application (165.4ms)
+Completed 200 OK in 177ms (Views: 171.8ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 22:15:10 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.6ms)
+Rendered layouts/_stylesheets.html.erb (10.7ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (17.9ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered users/new.html.erb within layouts/application (237.7ms)
+Completed 200 OK in 294ms (Views: 246.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-11 22:15:31 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdPvAzdypir5VRDFiwxw65gKT7IHHfXbJ2GcyDcdqFs=", "user"=>{"name"=>"Alex Korzun", "email"=>"korzun.alex@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mSQL (5.7ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1
+  [1m[36mAREL (1.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-11 19:15:31.526587', '2012-01-11 19:15:31.526587', '1c64445c165c54c96ed7ece65b603fe42d31533a520c74988362adcca794fc3c', '65cf7d3a7a4bad691ccf69269a46cdf61ac3c2e446d7e322485ef9a66289cc83')[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 558ms
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-11 22:15:31 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.6ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (6.7ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered users/show.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 132ms (Views: 50.7ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2012-01-11 22:15:52 +0300
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 22:15:52 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (3.6ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (144.8ms)
+Rendered layouts/_footer.html.erb (4.7ms)
+Rendered pages/home.html.erb within layouts/application (163.8ms)
+Completed 200 OK in 174ms (Views: 172.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 22:15:56 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.1ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (4.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (76.8ms)
+Rendered layouts/_footer.html.erb (6.5ms)
+Rendered sessions/new.html.erb within layouts/application (100.8ms)
+Completed 200 OK in 122ms (Views: 115.4ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 22:16:07 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdPvAzdypir5VRDFiwxw65gKT7IHHfXbJ2GcyDcdqFs=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"manaraga"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (6.4ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered sessions/new.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 108ms (Views: 41.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 22:16:23 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdPvAzdypir5VRDFiwxw65gKT7IHHfXbJ2GcyDcdqFs=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"manaraga"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (10.1ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered sessions/new.html.erb within layouts/application (125.1ms)
+Completed 200 OK in 208ms (Views: 134.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 22:17:10 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdPvAzdypir5VRDFiwxw65gKT7IHHfXbJ2GcyDcdqFs=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"manaraga"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (8.3ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered sessions/new.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 175ms (Views: 65.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 22:17:22 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdPvAzdypir5VRDFiwxw65gKT7IHHfXbJ2GcyDcdqFs=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"manaraga"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (5.6ms)
+Rendered layouts/_footer.html.erb (6.2ms)
+Rendered sessions/new.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 268ms (Views: 39.3ms | ActiveRecord: 1.1ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 22:34:03 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.6ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (3.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (374.4ms)
+Rendered layouts/_footer.html.erb (9.7ms)
+Rendered pages/home.html.erb within layouts/application (425.2ms)
+Completed 200 OK in 435ms (Views: 430.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 22:34:08 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (105.2ms)
+Rendered layouts/_footer.html.erb (2.6ms)
+Rendered sessions/new.html.erb within layouts/application (371.0ms)
+Completed 200 OK in 382ms (Views: 379.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 22:34:38 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3AyxAk6VkVyQYKyciR2iLIXo/YF/T6yhmJhyPO2n7XI=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"manaraga"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (6.8ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered sessions/new.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 139ms (Views: 42.8ms | ActiveRecord: 1.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mSQL (1.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (194.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (153.6ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (166.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (64.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mSQL (166.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120108180614')
+  [1m[36mSQL (85.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120105162911')[0m
+  [1m[35mSQL (88.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120105131521')
+  [1m[36mSQL (92.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120108153636')[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mSQL (1.9ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (1.6ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-11 19:41:21.397520', '2012-01-11 19:41:21.397520', '7fe150b90611d1ffb21f9b9b1992ae0c0f0d5a7310402b65e56790d3aff3f280', '80da8399b67a71080c1e864ed71f5754b28c306c9ca58efd5ece054fd2c422f7')[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-11 22:42:33 +0300
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.9ms)
+
+
+Started GET "/users/nil" for 127.0.0.1 at 2012-01-11 22:42:44 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"nil"}
+  [1m[36mSQL (3.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 0 LIMIT 1
+Completed 404 Not Found in 70ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=nil):
+  app/controllers/users_controller.rb:9:in `show'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.8ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-11 22:42:50 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (28.2ms)
+Rendered layouts/_footer.html.erb (2.3ms)
+Rendered users/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 122ms (Views: 56.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 22:43:06 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (63.1ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered sessions/new.html.erb within layouts/application (287.8ms)
+Completed 200 OK in 298ms (Views: 296.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 22:43:20 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3AyxAk6VkVyQYKyciR2iLIXo/YF/T6yhmJhyPO2n7XI=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"12345678"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (6.2ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered sessions/new.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 212ms (Views: 45.9ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 22:43:33 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3AyxAk6VkVyQYKyciR2iLIXo/YF/T6yhmJhyPO2n7XI=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"manaraga"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (6.2ms)
+Rendered layouts/_footer.html.erb (2.7ms)
+Rendered sessions/new.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 104ms (Views: 37.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-11 22:43:50 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (6.6ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Rendered users/show.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 173ms (Views: 37.6ms | ActiveRecord: 1.9ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mSQL (1.6ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (134.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255)) [0m
+  [1m[35mSQL (0.2ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (109.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (153.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (132.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mSQL (108.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120108180614')
+  [1m[36mSQL (87.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120105162911')[0m
+  [1m[35mSQL (110.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120105131521')
+  [1m[36mSQL (66.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120108153636')[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-11 22:45:35 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (4.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 404 Not Found in 44ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=1):
+  app/controllers/users_controller.rb:9:in `show'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.2ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 22:45:59 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (8.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (74.4ms)
+Rendered layouts/_footer.html.erb (1.4ms)
+Rendered pages/home.html.erb within layouts/application (107.5ms)
+Completed 200 OK in 134ms (Views: 130.7ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-11 22:46:04 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.3ms)
+Rendered layouts/_stylesheets.html.erb (2.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (14.8ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered users/new.html.erb within layouts/application (189.6ms)
+Completed 200 OK in 292ms (Views: 197.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-11 22:46:32 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3AyxAk6VkVyQYKyciR2iLIXo/YF/T6yhmJhyPO2n7XI=", "user"=>{"name"=>"Alex Korzun", "email"=>"korzun.alex@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1[0m
+  [1m[35mAREL (1.3ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-11 19:46:33.401374', '2012-01-11 19:46:33.401374', 'ba99634268b87b7e4cba7f730358c7cf3d8f681d0890730f23e8a9c34d3a413d', '6f88913880c0ba8c1a7014c84e41ce4f5d935d4d92c0620ba967a9e2dab4d925')
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 680ms
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-11 22:46:33 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (6.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (9.3ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered users/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 252ms (Views: 40.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-11 22:46:45 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (5.8ms)
+Rendered layouts/_footer.html.erb (1.4ms)
+Rendered users/show.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 107ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2012-01-11 22:46:53 +0300
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 22:46:53 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (137.9ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered pages/home.html.erb within layouts/application (153.2ms)
+Completed 200 OK in 212ms (Views: 210.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 22:46:55 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (58.3ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered sessions/new.html.erb within layouts/application (148.3ms)
+Completed 200 OK in 158ms (Views: 156.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 22:47:09 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3AyxAk6VkVyQYKyciR2iLIXo/YF/T6yhmJhyPO2n7XI=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"qwerty"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.9ms)
+  [1m[35mUser Load (2.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (8.3ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered sessions/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 113ms (Views: 45.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-11 22:47:31 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (8.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (5.9ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered users/show.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 166ms (Views: 41.0ms | ActiveRecord: 1.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 23:07:15 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.1ms)
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (129.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered pages/home.html.erb within layouts/application (153.6ms)
+Completed 200 OK in 174ms (Views: 168.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-11 23:07:19 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (3.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (61.5ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered sessions/new.html.erb within layouts/application (237.9ms)
+Completed 200 OK in 249ms (Views: 247.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-11 23:07:22 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3AyxAk6VkVyQYKyciR2iLIXo/YF/T6yhmJhyPO2n7XI=", "session"=>{"email"=>"", "pasword"=>""}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (5.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (11.9ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered sessions/new.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 92ms (Views: 43.2ms | ActiveRecord: 1.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1

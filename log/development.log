@@ -3477,3 +3477,2341 @@ DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 15:12:22 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.8ms)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (331.8ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered pages/home.html.erb within layouts/application (914.5ms)
+Completed 200 OK in 1111ms (Views: 1108.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 15:12:29 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (7.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (136.8ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered sessions/new.html.erb within layouts/application (837.4ms)
+Completed 200 OK in 902ms (Views: 899.7ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 15:13:18 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"qwerty"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (13.1ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered sessions/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 333ms (Views: 42.9ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 15:13:35 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"manaraga"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (4.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (8.5ms)
+Rendered layouts/_footer.html.erb (11.6ms)
+Rendered sessions/new.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 405ms (Views: 59.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 15:14:32 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (68.6ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered pages/home.html.erb within layouts/application (85.9ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-12 15:14:34 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.4ms)
+Rendered layouts/_stylesheets.html.erb (2.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (41.8ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered users/new.html.erb within layouts/application (160.3ms)
+Completed 200 OK in 315ms (Views: 186.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-12 15:15:24 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "user"=>{"name"=>"foo bar", "email"=>"foo@bar.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('foo@bar.com')) LIMIT 1
+  [1m[36mAREL (1.6ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('foo bar', 'foo@bar.com', '2012-01-12 12:15:24.575588', '2012-01-12 12:15:24.575588', '06f8d2259fc40310ce17e48e9315d5ac5b72408e8e350376a93fd03fedbdc8dc', '44f4d333fa24bd9295cde4621d85f0739701cd9e3232d9e415670706a42832a0')[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 534ms
+
+
+Started GET "/users/2" for 127.0.0.1 at 2012-01-12 15:15:24 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Rendered layouts/_header.html.erb (8.8ms)
+Rendered layouts/_footer.html.erb (2.8ms)
+Rendered users/show.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 148ms (Views: 85.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2012-01-12 15:15:37 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+  [1m[36mCACHE (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Rendered layouts/_header.html.erb (6.7ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered users/show.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 110ms (Views: 43.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2012-01-12 15:15:49 +0300
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 15:15:49 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (151.1ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered pages/home.html.erb within layouts/application (168.2ms)
+Completed 200 OK in 197ms (Views: 195.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 15:15:53 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (3.4ms)
+  [1m[35mUser Load (2.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (93.2ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered sessions/new.html.erb within layouts/application (115.5ms)
+Completed 200 OK in 125ms (Views: 121.9ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 15:16:30 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (5.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (16.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (16.7ms)
+Rendered layouts/_footer.html.erb (11.2ms)
+Rendered sessions/new.html.erb within layouts/application (93.3ms)
+Completed 200 OK in 469ms (Views: 111.8ms | ActiveRecord: 5.5ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 15:36:43 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (3.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (7.0ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered sessions/new.html.erb within layouts/application (209.5ms)
+Completed 200 OK in 435ms (Views: 221.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 15:36:51 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (231.7ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered sessions/new.html.erb within layouts/application (278.1ms)
+Completed 200 OK in 298ms (Views: 296.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 15:37:17 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (6.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (12.8ms)
+Rendered layouts/_footer.html.erb (14.5ms)
+Rendered sessions/new.html.erb within layouts/application (78.6ms)
+Completed 200 OK in 265ms (Views: 93.3ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 15:56:52 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (11.1ms)
+Rendered layouts/_footer.html.erb (8.9ms)
+Rendered sessions/new.html.erb within layouts/application (67.6ms)
+Completed 200 OK in 558ms (Views: 81.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 15:57:13 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"qwerty"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (6.9ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered sessions/new.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 134ms (Views: 53.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 15:57:25 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"manaraga"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (7.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered sessions/new.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 255ms (Views: 54.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 16:02:20 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (4.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (81.8ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered sessions/new.html.erb within layouts/application (120.4ms)
+Completed 200 OK in 144ms (Views: 142.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 16:02:35 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (7.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (15.4ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered sessions/new.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 154ms (Views: 63.0ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 16:03:29 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (27.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (409.8ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered sessions/new.html.erb within layouts/application (546.0ms)
+Completed 200 OK in 581ms (Views: 579.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 16:03:48 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (2.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (7.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (17.8ms)
+Rendered layouts/_footer.html.erb (3.1ms)
+Rendered sessions/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 133ms (Views: 41.5ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 16:08:59 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (206.8ms)
+Rendered layouts/_footer.html.erb (2.3ms)
+Rendered sessions/new.html.erb within layouts/application (229.6ms)
+Completed 200 OK in 242ms (Views: 239.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 16:09:15 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (3.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (6.8ms)
+Rendered layouts/_footer.html.erb (3.0ms)
+Rendered sessions/new.html.erb within layouts/application (44.8ms)
+Completed 200 OK in 139ms (Views: 57.3ms | ActiveRecord: 2.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 16:43:44 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (161.7ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered sessions/new.html.erb within layouts/application (357.0ms)
+Completed 200 OK in 369ms (Views: 367.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 16:43:57 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1
+Completed 500 Internal Server Error in 121ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/helpers/sessions_helper.rb:4:in `sign_in'
+  app/controllers/sessions_controller.rb:13:in `create'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.9ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 16:44:29 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (7.2ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (2.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.0ms)
+Rendered layouts/_footer.html.erb (20.5ms)
+Rendered sessions/new.html.erb within layouts/application (140.6ms)
+Completed 200 OK in 600ms (Views: 157.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 16:44:36 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (14.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (162.8ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered sessions/new.html.erb within layouts/application (213.2ms)
+Completed 200 OK in 235ms (Views: 233.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 16:44:46 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (3.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (6.7ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered sessions/new.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 132ms (Views: 54.1ms | ActiveRecord: 1.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 17:19:20 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (3.3ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (195.5ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered sessions/new.html.erb within layouts/application (406.6ms)
+Completed 200 OK in 418ms (Views: 416.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 17:19:32 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (6.4ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered sessions/new.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 231ms (Views: 53.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 17:23:18 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (3.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (89.1ms)
+Rendered layouts/_footer.html.erb (32.7ms)
+Rendered sessions/new.html.erb within layouts/application (161.7ms)
+Completed 200 OK in 176ms (Views: 175.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 17:23:29 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (4.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (4.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (20.4ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered sessions/new.html.erb within layouts/application (92.0ms)
+Completed 200 OK in 328ms (Views: 107.6ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 17:48:26 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (11.2ms)
+  [1m[36mUser Load (6.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (70.5ms)
+Rendered layouts/_footer.html.erb (13.3ms)
+Rendered sessions/new.html.erb within layouts/application (137.8ms)
+Completed 200 OK in 593ms (Views: 144.5ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 17:48:52 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (11.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (12.7ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered sessions/new.html.erb within layouts/application (48.2ms)
+Completed 200 OK in 174ms (Views: 58.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 17:56:17 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.8ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (365.7ms)
+Rendered layouts/_footer.html.erb (3.3ms)
+Rendered sessions/new.html.erb within layouts/application (414.8ms)
+Completed 200 OK in 425ms (Views: 423.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 17:56:27 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (3.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (8.3ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered sessions/new.html.erb within layouts/application (50.9ms)
+Completed 200 OK in 263ms (Views: 63.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 17:59:23 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (201.3ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered sessions/new.html.erb within layouts/application (223.3ms)
+Completed 200 OK in 243ms (Views: 241.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 17:59:46 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (5.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered sessions/new.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 223ms (Views: 58.1ms | ActiveRecord: 0.9ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mUser Load (3.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 19:46:45 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (3.0ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (188.5ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Rendered pages/home.html.erb within layouts/application (220.5ms)
+Completed 200 OK in 247ms (Views: 244.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-12 19:46:56 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.3ms)
+Rendered layouts/_stylesheets.html.erb (3.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (22.5ms)
+Rendered layouts/_footer.html.erb (8.5ms)
+Rendered users/new.html.erb within layouts/application (313.9ms)
+Completed 200 OK in 370ms (Views: 322.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 19:47:05 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (6.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (3.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (127.2ms)
+Rendered layouts/_footer.html.erb (6.3ms)
+Rendered sessions/new.html.erb within layouts/application (157.0ms)
+Completed 200 OK in 173ms (Views: 168.1ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 19:47:47 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (9.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (11.6ms)
+Rendered layouts/_footer.html.erb (6.1ms)
+Rendered sessions/new.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 511ms (Views: 89.9ms | ActiveRecord: 9.9ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-12 20:42:00 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (3.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (34.1ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (64.3ms)
+Completed 200 OK in 158ms (Views: 74.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-12 20:42:47 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (2.3ms)
+Rendered users/edit.html.erb within layouts/application (424.9ms)
+Completed 500 Internal Server Error in 552ms
+
+ActionView::Template::Error (undefined local variable or method `options' for #<#<Class:0xa5fa3d4>:0xa5e0858>):
+    24: <% end %>
+    25: 
+    26: <div>
+    27:   <%= gravatar_for @user %>
+    28:   <a href="http://gravatar.com/emails">change</a>
+    29: </div>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/edit.html.erb:27:in `_app_views_users_edit_html_erb__790292235_86965710__11427956'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.8ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-12 20:54:30 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered shared/_error_messages.html.erb (1.9ms)
+Rendered users/edit.html.erb within layouts/application (190.6ms)
+Completed 500 Internal Server Error in 328ms
+
+ActionView::Template::Error (undefined local variable or method `options' for #<#<Class:0xb4407f4>:0xb43fa5c>):
+    24: <% end %>
+    25: 
+    26: <div>
+    27:   <%= gravatar_for @user %>
+    28:   <a href="http://gravatar.com/emails">change</a>
+    29: </div>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/edit.html.erb:27:in `_app_views_users_edit_html_erb__790292235_94500920__11427956'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.9ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.1ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-12 20:54:41 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.8ms)
+  [1m[35mUser Load (4.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (10.6ms)
+Rendered layouts/_footer.html.erb (2.9ms)
+Rendered users/show.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 194ms (Views: 47.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-12 20:55:11 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (5.4ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (12.1ms)
+Rendered layouts/_footer.html.erb (7.9ms)
+Rendered users/show.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 221ms (Views: 59.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-12 20:55:26 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.4ms)
+Rendered users/edit.html.erb within layouts/application (157.4ms)
+Completed 500 Internal Server Error in 281ms
+
+ActionView::Template::Error (undefined local variable or method `options' for #<#<Class:0xa999940>:0xa998a7c>):
+    24: <% end %>
+    25: 
+    26: <div>
+    27:   <%= gravatar_for @user %>
+    28:   <a href="http://gravatar.com/emails">change</a>
+    29: </div>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/edit.html.erb:27:in `_app_views_users_edit_html_erb__790292235_88915960__11427956'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.7ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.6ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.8ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-12 20:57:13 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered shared/_error_messages.html.erb (2.5ms)
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (7.6ms)
+Rendered layouts/_footer.html.erb (16.2ms)
+Rendered users/edit.html.erb within layouts/application (112.9ms)
+Completed 200 OK in 231ms (Views: 128.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-12 21:02:23 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (2.2ms)
+Rendered users/edit.html.erb within layouts/application (141.9ms)
+Completed 500 Internal Server Error in 344ms
+
+ActionView::Template::Error (undefined local variable or method `options' for #<#<Class:0xb464348>:0xb45f384>):
+    24: <% end %>
+    25: 
+    26: <div>
+    27:   <%= gravatar_for @user %>
+    28:   
+    29: </div>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/edit.html.erb:27:in `_app_views_users_edit_html_erb__790292235_94565580__11427956'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.4ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.8ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-12 21:06:34 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered shared/_error_messages.html.erb (1.8ms)
+Rendered users/edit.html.erb within layouts/application (128.3ms)
+Completed 500 Internal Server Error in 223ms
+
+ActionView::Template::Error (can't convert User into String):
+    24: <% end %>
+    25: 
+    26: <div>
+    27:   <%= gravatar_image_tag @user %>
+    28:   
+    29: </div>
+  app/views/users/edit.html.erb:27:in `_app_views_users_edit_html_erb__790292235_86639860__11427956'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.3ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.8ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-12 21:07:00 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (12.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.6ms)
+Rendered layouts/_stylesheets.html.erb (3.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (9.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (20.9ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/edit.html.erb within layouts/application (96.1ms)
+Completed 200 OK in 171ms (Views: 98.2ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-12 21:07:30 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (2.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered shared/_error_messages.html.erb (1.8ms)
+Rendered layouts/_stylesheets.html.erb (10.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (17.6ms)
+Rendered layouts/_footer.html.erb (2.9ms)
+Rendered users/edit.html.erb within layouts/application (104.2ms)
+Completed 200 OK in 178ms (Views: 116.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2012-01-12 21:08:19 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (4.2ms)
+Rendered layouts/_stylesheets.html.erb (3.7ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (8.8ms)
+Rendered layouts/_footer.html.erb (5.1ms)
+Rendered users/edit.html.erb within layouts/application (180.5ms)
+Completed 200 OK in 244ms (Views: 199.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users/2" for 127.0.0.1 at 2012-01-12 21:12:00 +0300
+  Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "user"=>{"name"=>"foo bar", "email"=>"foo@bar.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"2"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('foo@bar.com')) AND ("users".id <> 2) LIMIT 1[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 433ms
+
+
+Started GET "/users/2" for 127.0.0.1 at 2012-01-12 21:12:00 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (5.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (15.8ms)
+Rendered layouts/_footer.html.erb (2.9ms)
+Rendered users/show.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 178ms (Views: 54.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 21:12:27 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (3.3ms)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (211.6ms)
+Rendered layouts/_footer.html.erb (2.3ms)
+Rendered sessions/new.html.erb within layouts/application (235.8ms)
+Completed 200 OK in 251ms (Views: 247.3ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 21:12:40 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"foo@bar.com", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.8ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (7.2ms)
+Rendered layouts/_footer.html.erb (7.2ms)
+Rendered sessions/new.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 253ms (Views: 96.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 21:12:50 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (202.1ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered pages/home.html.erb within layouts/application (225.8ms)
+Completed 200 OK in 242ms (Views: 240.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-12 21:12:53 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.5ms)
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+  [1m[35mUser Load (2.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (127.2ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered users/new.html.erb within layouts/application (196.8ms)
+Completed 200 OK in 256ms (Views: 207.3ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-12 21:13:23 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "user"=>{"name"=>"qwerty", "email"=>"qwerty@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mSQL (0.7ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('qwerty@mail.ru')) LIMIT 1
+  [1m[36mAREL (4.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('qwerty', 'qwerty@mail.ru', '2012-01-12 18:13:23.998315', '2012-01-12 18:13:23.998315', 'e19f4a92625598b2df9987c8b9cb05d0a4348ebe20f0b8c23059c4ed84700759', '4e7414789201afe32b1441efc56dcc3b77d5d30b93bb6d74165b6564d3aae4eb')[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 542ms
+
+
+Started GET "/users/3" for 127.0.0.1 at 2012-01-12 21:13:24 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (9.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (3.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_header.html.erb (38.2ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Rendered users/show.html.erb within layouts/application (97.8ms)
+Completed 200 OK in 540ms (Views: 128.9ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2012-01-12 21:13:36 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_header.html.erb (9.2ms)
+Rendered layouts/_footer.html.erb (3.7ms)
+Rendered users/show.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 135ms (Views: 56.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/3/edit" for 127.0.0.1 at 2012-01-12 21:13:43 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (2.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered shared/_error_messages.html.erb (2.4ms)
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_header.html.erb (33.6ms)
+Rendered layouts/_footer.html.erb (3.2ms)
+Rendered users/edit.html.erb within layouts/application (123.5ms)
+Completed 200 OK in 288ms (Views: 136.0ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/users/3" for 127.0.0.1 at 2012-01-12 21:28:53 +0300
+  Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "user"=>{"name"=>"qwerty", "email"=>"qwerty@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (5.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mSQL (3.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('qwerty@mail.ru')) AND ("users".id <> 3) LIMIT 1
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 152ms
+
+
+Started GET "/users/3" for 127.0.0.1 at 2012-01-12 21:28:54 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (12.0ms)
+  [1m[35mCACHE (5.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_header.html.erb (39.8ms)
+Rendered layouts/_footer.html.erb (2.3ms)
+Rendered users/show.html.erb within layouts/application (111.2ms)
+Completed 200 OK in 333ms (Views: 146.9ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-12 21:29:05 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (3.2ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_header.html.erb (16.7ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered users/show.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 120ms (Views: 48.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-12 21:29:19 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (8.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered shared/_error_messages.html.erb (1.7ms)
+Rendered layouts/_stylesheets.html.erb (3.5ms)
+Rendered layouts/_header.html.erb (7.1ms)
+Rendered layouts/_footer.html.erb (7.1ms)
+Rendered users/edit.html.erb within layouts/application (137.8ms)
+Completed 200 OK in 234ms (Views: 148.1ms | ActiveRecord: 8.7ms)
+
+
+Started POST "/users/1" for 127.0.0.1 at 2012-01-12 21:29:46 +0300
+  Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "user"=>{"name"=>"Alex Korzun", "email"=>"korzun.alex@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"1"}
+  [1m[36mUser Load (4.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (11.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSQL (4.9ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) AND ("users".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 222ms
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-12 21:29:47 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_header.html.erb (9.3ms)
+Rendered layouts/_footer.html.erb (6.7ms)
+Rendered users/show.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 186ms (Views: 56.8ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2012-01-12 21:30:25 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (3.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_header.html.erb (9.7ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered users/show.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 188ms (Views: 52.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2012-01-12 21:30:30 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (4.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_header.html.erb (6.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered users/show.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 143ms (Views: 73.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for 127.0.0.1 at 2012-01-12 21:30:40 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.5ms)
+Rendered layouts/_stylesheets.html.erb (2.7ms)
+Rendered layouts/_header.html.erb (5.1ms)
+Rendered layouts/_footer.html.erb (2.6ms)
+Rendered users/edit.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 259ms (Views: 68.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 21:30:44 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_header.html.erb (102.4ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Rendered pages/home.html.erb within layouts/application (132.0ms)
+Completed 200 OK in 144ms (Views: 142.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 21:41:33 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_header.html.erb (198.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/home.html.erb within layouts/application (217.6ms)
+Completed 200 OK in 257ms (Views: 255.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-12 21:41:40 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 131ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 21:41:40 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_header.html.erb (101.3ms)
+Rendered layouts/_footer.html.erb (3.7ms)
+Rendered pages/home.html.erb within layouts/application (131.3ms)
+Completed 200 OK in 142ms (Views: 140.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-12 21:41:50 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+  [1m[35mUser Load (4.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_header.html.erb (21.4ms)
+Rendered layouts/_footer.html.erb (2.7ms)
+Rendered users/show.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 296ms (Views: 51.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-01-12 21:42:08 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 150ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 21:42:09 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (10.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_header.html.erb (300.7ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered pages/home.html.erb within layouts/application (329.2ms)
+Completed 200 OK in 342ms (Views: 340.5ms | ActiveRecord: 2.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2012-01-12 22:17:05 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSQL (2.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_header.html.erb (60.8ms)
+Rendered layouts/_footer.html.erb (16.7ms)
+Rendered users/show.html.erb within layouts/application (110.2ms)
+Completed 200 OK in 217ms (Views: 124.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:17:14 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (205.6ms)
+Completed 500 Internal Server Error in 316ms
+
+ActionView::Template::Error (undefined local variable or method `options' for #<#<Class:0x992bfb8>:0x992b108>):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_for user, :size => 30 %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_80302700_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_80302700_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (22.9ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (42.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:18:02 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 168ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_image_tag @user.email, :size => 30 %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_88274090_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_88274090_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (115.1ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (130.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:19:14 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered layouts/_stylesheets.html.erb (3.4ms)
+Rendered layouts/_header.html.erb (10.4ms)
+Rendered layouts/_footer.html.erb (2.6ms)
+Rendered users/index.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 158ms (Views: 55.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:21:13 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (41.4ms)
+Completed 500 Internal Server Error in 241ms
+
+ActionView::Template::Error (undefined local variable or method `options' for #<#<Class:0xaa1ebf4>:0xaa1dde4>):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_for(user, option = { :size => 50 }) %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_89188790_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_89188790_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.5ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:22:00 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 103ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_image_tag @user.email %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_80604460_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_80604460_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.2ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:22:28 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+Rendered layouts/_header.html.erb (9.1ms)
+Rendered layouts/_footer.html.erb (3.9ms)
+Rendered users/index.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 133ms (Views: 56.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:23:01 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 190ms
+
+ActionView::Template::Error (undefined method `delete' for 30:Fixnum):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_image_tag user.email, size = 30 %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_89539150_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_89539150_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.3ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (44.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:23:28 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered layouts/_stylesheets.html.erb (2.9ms)
+Rendered layouts/_header.html.erb (6.0ms)
+Rendered layouts/_footer.html.erb (2.8ms)
+Rendered users/index.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 137ms (Views: 55.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:24:02 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered layouts/_stylesheets.html.erb (3.5ms)
+Rendered layouts/_header.html.erb (5.4ms)
+Rendered layouts/_footer.html.erb (3.1ms)
+Rendered users/index.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 228ms (Views: 55.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:24:09 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered layouts/_stylesheets.html.erb (3.1ms)
+Rendered layouts/_header.html.erb (6.1ms)
+Rendered layouts/_footer.html.erb (2.4ms)
+Rendered users/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 138ms (Views: 56.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:26:01 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (32.7ms)
+Completed 500 Internal Server Error in 148ms
+
+ActionView::Template::Error (undefined method `email' for "korzun.alex@mail.ru":String):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_for user.email, :size => 10 %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/helpers/users_helper.rb:3:in `gravatar_for'
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_88683780_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_88683780_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.2ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:27:12 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 179ms
+
+ActionView::Template::Error (undefined method `email' for "korzun.alex@mail.ru":String):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_for( user.email, :size => 10) %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/helpers/users_helper.rb:3:in `gravatar_for'
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_81563470_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_81563470_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.2ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.8ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (130.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:27:52 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (30.1ms)
+Completed 500 Internal Server Error in 130ms
+
+ActionView::Template::Error (undefined local variable or method `options' for #<#<Class:0xa6cbdd0>:0xa6c9440>):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_for( user, :size => 10) %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_87232420_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_87232420_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.2ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (38.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:28:37 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (52.6ms)
+Completed 500 Internal Server Error in 259ms
+
+ActionView::Template::Error (undefined local variable or method `options' for #<#<Class:0xaa119f4>:0xaa10c34>):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_for( user, option = { :size => 50 }) %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_89161930_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_89161930_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.2ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:28:58 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (109.4ms)
+Completed 500 Internal Server Error in 237ms
+
+ActionView::Template::Error (undefined local variable or method `options' for #<#<Class:0x9c8f8a8>:0x9c859d4>):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_for user, option = { :size => 50 } %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_82030470_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_82030470_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.6ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:30:14 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (26.8ms)
+Completed 500 Internal Server Error in 204ms
+
+ActionView::Template::Error (undefined local variable or method `options' for #<#<Class:0xa36d288>:0xa351074>):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_for user, :size => 50 %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_85550700_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_85550700_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.4ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:32:06 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 196ms
+
+ActionView::Template::Error (undefined method `email' for "Alex Korzun":String):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_for user.name, :size => 50 %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/helpers/users_helper.rb:3:in `gravatar_for'
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_88805830_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_88805830_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.6ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:32:39 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (4.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 160ms
+
+ActionView::Template::Error (undefined method `email' for "korzun.alex@mail.ru":String):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_for user.email, :size => 50 %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/helpers/users_helper.rb:3:in `gravatar_for'
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_81673360_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_81673360_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.1ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (107.9ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (125.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:33:26 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered layouts/_stylesheets.html.erb (2.6ms)
+Rendered layouts/_header.html.erb (6.2ms)
+Rendered layouts/_footer.html.erb (2.9ms)
+Rendered users/index.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 147ms (Views: 54.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:34:07 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (3.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 232ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_image_tag user.email :size => 50 %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_89340580_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_89340580_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:34:55 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 101ms
+
+ActionView::Template::Error (can't convert Fixnum into Hash):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_image_tag user.email, :gravatar => 50 %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__640189107_83773720_35010447'
+  app/views/users/index.html.erb:4:in `each'
+  app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__640189107_83773720_35010447'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.3ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (44.6ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (67.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:38:09 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (7.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+ERROR: compiling _app_views_users_index_html_erb__640189107_88822760_35010447 RAISED /home/student/rails_projects/my_programm/app/views/users/index.html.erb:6: syntax error, unexpected '{', expecting ')'
+...mage_tag user.email, :gravatar{ :size => 50 } );@output_buff...
+...                               ^
+/home/student/rails_projects/my_programm/app/views/users/index.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+');   end 
+         ^
+/home/student/rails_projects/my_programm/app/views/users/index.html.erb:12: syntax error, unexpected keyword_ensure, expecting ')'
+/home/student/rails_projects/my_programm/app/views/users/index.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_users_index_html_erb__640189107_88822760_35010447(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "users/index";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>All users</h1>
+
+<ul class="users">
+');@output_buffer.append_if_string=    @users.each do |user| 
+@output_buffer.safe_concat('    <li>
+      ');@output_buffer.append= ( gravatar_image_tag user.email, :gravatar{ :size => 50 } );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( link_to user.name, user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </li>
+');   end 
+@output_buffer.safe_concat('</ul>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `module_eval'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `compile'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `block in render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:441:in `_run__234806442__process_action__735197656__callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `block in action'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/methodoverride.rb:24:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `block in call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/sendfile.rb:106:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/runtime.rb:17:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/lock.rb:13:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/lock.rb:13:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/content_length.rb:13:in `call'
+/home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/rack-1.2.5/lib/rack/handler/webrick.rb:52:in `service'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/student/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered users/index.html.erb within layouts/application (60.9ms)
+Completed 500 Internal Server Error in 270ms
+
+ActionView::Template::Error (/home/student/rails_projects/my_programm/app/views/users/index.html.erb:6: syntax error, unexpected '{', expecting ')'
+...mage_tag user.email, :gravatar{ :size => 50 } );@output_buff...
+...                               ^
+/home/student/rails_projects/my_programm/app/views/users/index.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+');   end 
+         ^
+/home/student/rails_projects/my_programm/app/views/users/index.html.erb:12: syntax error, unexpected keyword_ensure, expecting ')'
+/home/student/rails_projects/my_programm/app/views/users/index.html.erb:14: syntax error, unexpected keyword_end, expecting ')'):
+    3: <ul class="users">
+    4:   <% @users.each do |user| %>
+    5:     <li>
+    6:       <%= gravatar_image_tag user.email, :gravatar{ :size => 50 } %>
+    7:       <%= link_to user.name, user %>
+    8:     </li>
+    9:   <% end %>
+  
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.9ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:38:29 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (7.3ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered users/index.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 197ms (Views: 60.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:39:06 +0300
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+Rendered layouts/_header.html.erb (24.4ms)
+Rendered layouts/_footer.html.erb (6.3ms)
+Rendered users/index.html.erb within layouts/application (97.0ms)
+Completed 200 OK in 314ms (Views: 127.8ms | ActiveRecord: 1.1ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mSQL (3.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (268.8ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (80.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (186.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (107.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mSQL (190.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120108180614')
+  [1m[36mSQL (111.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120105162911')[0m
+  [1m[35mSQL (129.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120105131521')
+  [1m[36mSQL (122.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120108153636')[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Example User', 'example@railstutorial.org', '2012-01-12 19:45:05.718790', '2012-01-12 19:45:05.718790', '818072d6715429035069acb1d253b4003a0d97ee3184ad1059ac43d21853e36e', '9c5fee24be3ade7f6e80cac025117e16ddf3228a0577b7ab005e81085f85e9cd')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-1@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Eulah Huels', 'example-1@railstutorial.org', '2012-01-12 19:45:05.966861', '2012-01-12 19:45:05.966861', '065ae1023c0775d0f2509055ce2e8dbad6ce3f227e7e6dbca95c8602659251f8', 'e067e265dad974490dd1dcad191b0d4b52331732d90b9e360558c186199d360b')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-2@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Darren Schuppe III', 'example-2@railstutorial.org', '2012-01-12 19:45:06.116367', '2012-01-12 19:45:06.116367', '12edde0cede2d7c6237c6d4cafe8c30daac5b407cbbd47b28379b4630299f6a4', 'ed462431596659d165fdcccfeb5a9b109a4a8074fa9e7d024dce09c57d6d7a61')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-3@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.6ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Jaqueline West', 'example-3@railstutorial.org', '2012-01-12 19:45:06.259768', '2012-01-12 19:45:06.259768', '12edde0cede2d7c6237c6d4cafe8c30daac5b407cbbd47b28379b4630299f6a4', 'ed462431596659d165fdcccfeb5a9b109a4a8074fa9e7d024dce09c57d6d7a61')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-4@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Kendall Nicolas', 'example-4@railstutorial.org', '2012-01-12 19:45:06.385891', '2012-01-12 19:45:06.385891', '12edde0cede2d7c6237c6d4cafe8c30daac5b407cbbd47b28379b4630299f6a4', 'ed462431596659d165fdcccfeb5a9b109a4a8074fa9e7d024dce09c57d6d7a61')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-5@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Mr. Sunny Feil', 'example-5@railstutorial.org', '2012-01-12 19:45:06.551100', '2012-01-12 19:45:06.551100', '12edde0cede2d7c6237c6d4cafe8c30daac5b407cbbd47b28379b4630299f6a4', 'ed462431596659d165fdcccfeb5a9b109a4a8074fa9e7d024dce09c57d6d7a61')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-6@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Rita Gerlach', 'example-6@railstutorial.org', '2012-01-12 19:45:06.695645', '2012-01-12 19:45:06.695645', '12edde0cede2d7c6237c6d4cafe8c30daac5b407cbbd47b28379b4630299f6a4', 'ed462431596659d165fdcccfeb5a9b109a4a8074fa9e7d024dce09c57d6d7a61')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-7@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Mrs. Magali Effertz', 'example-7@railstutorial.org', '2012-01-12 19:45:06.817524', '2012-01-12 19:45:06.817524', '12edde0cede2d7c6237c6d4cafe8c30daac5b407cbbd47b28379b4630299f6a4', 'ed462431596659d165fdcccfeb5a9b109a4a8074fa9e7d024dce09c57d6d7a61')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-8@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Samantha Dicki', 'example-8@railstutorial.org', '2012-01-12 19:45:06.940238', '2012-01-12 19:45:06.940238', '12edde0cede2d7c6237c6d4cafe8c30daac5b407cbbd47b28379b4630299f6a4', 'ed462431596659d165fdcccfeb5a9b109a4a8074fa9e7d024dce09c57d6d7a61')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-9@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Nat Koss', 'example-9@railstutorial.org', '2012-01-12 19:45:07.120598', '2012-01-12 19:45:07.120598', 'c8378c8746bd3c0b8636203fb469e11cdb51875eec8afeb3cb03b92de33d243d', '8883643672808b3a825d910dd5a8d9a2d0834d2df0b5a5bc5c2c43c985254868')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-10@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Tabitha Willms', 'example-10@railstutorial.org', '2012-01-12 19:45:07.282908', '2012-01-12 19:45:07.282908', 'c8378c8746bd3c0b8636203fb469e11cdb51875eec8afeb3cb03b92de33d243d', '8883643672808b3a825d910dd5a8d9a2d0834d2df0b5a5bc5c2c43c985254868')
+  [1m[36mSQL (1.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-11@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Salma Medhurst', 'example-11@railstutorial.org', '2012-01-12 19:45:07.407193', '2012-01-12 19:45:07.407193', 'c8378c8746bd3c0b8636203fb469e11cdb51875eec8afeb3cb03b92de33d243d', '8883643672808b3a825d910dd5a8d9a2d0834d2df0b5a5bc5c2c43c985254868')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-12@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Jocelyn Funk', 'example-12@railstutorial.org', '2012-01-12 19:45:07.571793', '2012-01-12 19:45:07.571793', 'c8378c8746bd3c0b8636203fb469e11cdb51875eec8afeb3cb03b92de33d243d', '8883643672808b3a825d910dd5a8d9a2d0834d2df0b5a5bc5c2c43c985254868')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-13@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Nestor Schmitt', 'example-13@railstutorial.org', '2012-01-12 19:45:07.736338', '2012-01-12 19:45:07.736338', 'c8378c8746bd3c0b8636203fb469e11cdb51875eec8afeb3cb03b92de33d243d', '8883643672808b3a825d910dd5a8d9a2d0834d2df0b5a5bc5c2c43c985254868')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-14@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Bryon Barrows', 'example-14@railstutorial.org', '2012-01-12 19:45:07.861415', '2012-01-12 19:45:07.861415', 'c8378c8746bd3c0b8636203fb469e11cdb51875eec8afeb3cb03b92de33d243d', '8883643672808b3a825d910dd5a8d9a2d0834d2df0b5a5bc5c2c43c985254868')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-15@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Royce Hermann', 'example-15@railstutorial.org', '2012-01-12 19:45:08.095119', '2012-01-12 19:45:08.095119', 'f58e45433510e0cccc6e60c9c190fe8878864b5766b2519ead6b14b08a2899ea', '7c01ca9f277b967afdccf4d8e0f4ba773eadffe3369eef473b641b511467828e')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-16@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Jerrell Rosenbaum', 'example-16@railstutorial.org', '2012-01-12 19:45:08.240466', '2012-01-12 19:45:08.240466', 'f58e45433510e0cccc6e60c9c190fe8878864b5766b2519ead6b14b08a2899ea', '7c01ca9f277b967afdccf4d8e0f4ba773eadffe3369eef473b641b511467828e')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-17@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Roman Kassulke IV', 'example-17@railstutorial.org', '2012-01-12 19:45:08.380874', '2012-01-12 19:45:08.380874', 'f58e45433510e0cccc6e60c9c190fe8878864b5766b2519ead6b14b08a2899ea', '7c01ca9f277b967afdccf4d8e0f4ba773eadffe3369eef473b641b511467828e')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-18@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Napoleon Kautzer', 'example-18@railstutorial.org', '2012-01-12 19:45:08.527154', '2012-01-12 19:45:08.527154', 'f58e45433510e0cccc6e60c9c190fe8878864b5766b2519ead6b14b08a2899ea', '7c01ca9f277b967afdccf4d8e0f4ba773eadffe3369eef473b641b511467828e')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-19@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Dr. Rowan Jones', 'example-19@railstutorial.org', '2012-01-12 19:45:08.671782', '2012-01-12 19:45:08.671782', 'f58e45433510e0cccc6e60c9c190fe8878864b5766b2519ead6b14b08a2899ea', '7c01ca9f277b967afdccf4d8e0f4ba773eadffe3369eef473b641b511467828e')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-20@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Trace Nitzsche', 'example-20@railstutorial.org', '2012-01-12 19:45:08.815916', '2012-01-12 19:45:08.815916', 'f58e45433510e0cccc6e60c9c190fe8878864b5766b2519ead6b14b08a2899ea', '7c01ca9f277b967afdccf4d8e0f4ba773eadffe3369eef473b641b511467828e')
+  [1m[36mSQL (2.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-21@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Nikki Williamson DVM', 'example-21@railstutorial.org', '2012-01-12 19:45:08.970638', '2012-01-12 19:45:08.970638', 'f58e45433510e0cccc6e60c9c190fe8878864b5766b2519ead6b14b08a2899ea', '7c01ca9f277b967afdccf4d8e0f4ba773eadffe3369eef473b641b511467828e')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-22@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Aylin Kutch', 'example-22@railstutorial.org', '2012-01-12 19:45:09.174837', '2012-01-12 19:45:09.174837', 'ec47b5fdac6b325eba58723e7223c17d6809e51cb76ed142c260f89773f864c3', '6a9779509ca40426d87d14dd22107a92da6f3313f2aafc6275375019764a2651')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-23@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Norbert Ratke', 'example-23@railstutorial.org', '2012-01-12 19:45:09.317995', '2012-01-12 19:45:09.317995', 'ec47b5fdac6b325eba58723e7223c17d6809e51cb76ed142c260f89773f864c3', '6a9779509ca40426d87d14dd22107a92da6f3313f2aafc6275375019764a2651')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-24@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.3ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Gladys Gleason', 'example-24@railstutorial.org', '2012-01-12 19:45:09.440337', '2012-01-12 19:45:09.440337', 'ec47b5fdac6b325eba58723e7223c17d6809e51cb76ed142c260f89773f864c3', '6a9779509ca40426d87d14dd22107a92da6f3313f2aafc6275375019764a2651')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-25@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Immanuel Harris', 'example-25@railstutorial.org', '2012-01-12 19:45:09.660397', '2012-01-12 19:45:09.660397', 'ec47b5fdac6b325eba58723e7223c17d6809e51cb76ed142c260f89773f864c3', '6a9779509ca40426d87d14dd22107a92da6f3313f2aafc6275375019764a2651')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-26@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Nelda Yundt', 'example-26@railstutorial.org', '2012-01-12 19:45:09.781537', '2012-01-12 19:45:09.781537', 'ec47b5fdac6b325eba58723e7223c17d6809e51cb76ed142c260f89773f864c3', '6a9779509ca40426d87d14dd22107a92da6f3313f2aafc6275375019764a2651')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-27@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Miss Maynard Schmidt', 'example-27@railstutorial.org', '2012-01-12 19:45:09.915642', '2012-01-12 19:45:09.915642', 'ec47b5fdac6b325eba58723e7223c17d6809e51cb76ed142c260f89773f864c3', '6a9779509ca40426d87d14dd22107a92da6f3313f2aafc6275375019764a2651')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-28@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Judd Wilkinson', 'example-28@railstutorial.org', '2012-01-12 19:45:10.068604', '2012-01-12 19:45:10.068604', 'ab945bcf074a0f085dafba33b4ac846eb2c596da27175478ca6d2cb497879564', '9a4e3e94654793f86752b6f839960694f51ba754cf9390d902318ec0076d7ac0')
+  [1m[36mSQL (2.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-29@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Hilbert Mills', 'example-29@railstutorial.org', '2012-01-12 19:45:10.203583', '2012-01-12 19:45:10.203583', 'ab945bcf074a0f085dafba33b4ac846eb2c596da27175478ca6d2cb497879564', '9a4e3e94654793f86752b6f839960694f51ba754cf9390d902318ec0076d7ac0')
+  [1m[36mSQL (1.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-30@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Ms. Van Padberg', 'example-30@railstutorial.org', '2012-01-12 19:45:10.392339', '2012-01-12 19:45:10.392339', 'ab945bcf074a0f085dafba33b4ac846eb2c596da27175478ca6d2cb497879564', '9a4e3e94654793f86752b6f839960694f51ba754cf9390d902318ec0076d7ac0')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-31@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Ms. Eve Purdy', 'example-31@railstutorial.org', '2012-01-12 19:45:10.548056', '2012-01-12 19:45:10.548056', 'ab945bcf074a0f085dafba33b4ac846eb2c596da27175478ca6d2cb497879564', '9a4e3e94654793f86752b6f839960694f51ba754cf9390d902318ec0076d7ac0')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-32@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Raheem Satterfield', 'example-32@railstutorial.org', '2012-01-12 19:45:10.657939', '2012-01-12 19:45:10.657939', 'ab945bcf074a0f085dafba33b4ac846eb2c596da27175478ca6d2cb497879564', '9a4e3e94654793f86752b6f839960694f51ba754cf9390d902318ec0076d7ac0')
+  [1m[36mSQL (2.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-33@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Miss Ariel Boyer', 'example-33@railstutorial.org', '2012-01-12 19:45:10.827892', '2012-01-12 19:45:10.827892', 'ab945bcf074a0f085dafba33b4ac846eb2c596da27175478ca6d2cb497879564', '9a4e3e94654793f86752b6f839960694f51ba754cf9390d902318ec0076d7ac0')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-34@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Josiah Ledner', 'example-34@railstutorial.org', '2012-01-12 19:45:10.993040', '2012-01-12 19:45:10.993040', 'ab945bcf074a0f085dafba33b4ac846eb2c596da27175478ca6d2cb497879564', '9a4e3e94654793f86752b6f839960694f51ba754cf9390d902318ec0076d7ac0')
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-35@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Joaquin Schimmel', 'example-35@railstutorial.org', '2012-01-12 19:45:11.125524', '2012-01-12 19:45:11.125524', '2c8bce10b5052f68b0383e353b1e184207d2a8a9907fb24e5af0bfa381fb40e9', '808e68338a3b917594b3e3b2e60f203dbf9f3de7cbf71cf3dc11c6ecb5857228')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-36@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Miss Gladys Thiel', 'example-36@railstutorial.org', '2012-01-12 19:45:11.248324', '2012-01-12 19:45:11.248324', '2c8bce10b5052f68b0383e353b1e184207d2a8a9907fb24e5af0bfa381fb40e9', '808e68338a3b917594b3e3b2e60f203dbf9f3de7cbf71cf3dc11c6ecb5857228')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-37@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Clifton Koepp', 'example-37@railstutorial.org', '2012-01-12 19:45:11.368893', '2012-01-12 19:45:11.368893', '2c8bce10b5052f68b0383e353b1e184207d2a8a9907fb24e5af0bfa381fb40e9', '808e68338a3b917594b3e3b2e60f203dbf9f3de7cbf71cf3dc11c6ecb5857228')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-38@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Joanne Abbott', 'example-38@railstutorial.org', '2012-01-12 19:45:11.558972', '2012-01-12 19:45:11.558972', '2c8bce10b5052f68b0383e353b1e184207d2a8a9907fb24e5af0bfa381fb40e9', '808e68338a3b917594b3e3b2e60f203dbf9f3de7cbf71cf3dc11c6ecb5857228')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-39@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Cecile Bogan', 'example-39@railstutorial.org', '2012-01-12 19:45:11.669838', '2012-01-12 19:45:11.669838', '2c8bce10b5052f68b0383e353b1e184207d2a8a9907fb24e5af0bfa381fb40e9', '808e68338a3b917594b3e3b2e60f203dbf9f3de7cbf71cf3dc11c6ecb5857228')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-40@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (9.7ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Maverick Roberts', 'example-40@railstutorial.org', '2012-01-12 19:45:11.867362', '2012-01-12 19:45:11.867362', '2c8bce10b5052f68b0383e353b1e184207d2a8a9907fb24e5af0bfa381fb40e9', '808e68338a3b917594b3e3b2e60f203dbf9f3de7cbf71cf3dc11c6ecb5857228')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-41@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Otis Muller', 'example-41@railstutorial.org', '2012-01-12 19:45:12.102327', '2012-01-12 19:45:12.102327', '86ab09dd3838ba7eb63470e5fc41d8bd9c07f3813dd2faf9cc0d3bb38286230a', '8171b7bf4de708e645bc5289675715141e761591a7bc6d072a5271dd40c05c43')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-42@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Julia Cremin', 'example-42@railstutorial.org', '2012-01-12 19:45:12.350257', '2012-01-12 19:45:12.350257', '86ab09dd3838ba7eb63470e5fc41d8bd9c07f3813dd2faf9cc0d3bb38286230a', '8171b7bf4de708e645bc5289675715141e761591a7bc6d072a5271dd40c05c43')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-43@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Autumn Auer', 'example-43@railstutorial.org', '2012-01-12 19:45:12.510865', '2012-01-12 19:45:12.510865', '86ab09dd3838ba7eb63470e5fc41d8bd9c07f3813dd2faf9cc0d3bb38286230a', '8171b7bf4de708e645bc5289675715141e761591a7bc6d072a5271dd40c05c43')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-44@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Jermey Spencer', 'example-44@railstutorial.org', '2012-01-12 19:45:12.636081', '2012-01-12 19:45:12.636081', '86ab09dd3838ba7eb63470e5fc41d8bd9c07f3813dd2faf9cc0d3bb38286230a', '8171b7bf4de708e645bc5289675715141e761591a7bc6d072a5271dd40c05c43')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-45@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (9.4ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Moses Hamill', 'example-45@railstutorial.org', '2012-01-12 19:45:12.884879', '2012-01-12 19:45:12.884879', '86ab09dd3838ba7eb63470e5fc41d8bd9c07f3813dd2faf9cc0d3bb38286230a', '8171b7bf4de708e645bc5289675715141e761591a7bc6d072a5271dd40c05c43')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-46@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Darron Torphy', 'example-46@railstutorial.org', '2012-01-12 19:45:13.067302', '2012-01-12 19:45:13.067302', 'ff1d612910c5532574dfab2224cd2b3fd3a434a590eeabdfac00fa50c109c196', '5641d75bf3a04b3c05e538f3c51c2c95ec8e91e849014276988565398cca775e')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-47@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Mrs. Lou Kerluke', 'example-47@railstutorial.org', '2012-01-12 19:45:13.225136', '2012-01-12 19:45:13.225136', 'ff1d612910c5532574dfab2224cd2b3fd3a434a590eeabdfac00fa50c109c196', '5641d75bf3a04b3c05e538f3c51c2c95ec8e91e849014276988565398cca775e')
+  [1m[36mSQL (1.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-48@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.3ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Marcel Torp', 'example-48@railstutorial.org', '2012-01-12 19:45:13.405910', '2012-01-12 19:45:13.405910', 'ff1d612910c5532574dfab2224cd2b3fd3a434a590eeabdfac00fa50c109c196', '5641d75bf3a04b3c05e538f3c51c2c95ec8e91e849014276988565398cca775e')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-49@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Enid Kozey', 'example-49@railstutorial.org', '2012-01-12 19:45:13.617139', '2012-01-12 19:45:13.617139', 'ff1d612910c5532574dfab2224cd2b3fd3a434a590eeabdfac00fa50c109c196', '5641d75bf3a04b3c05e538f3c51c2c95ec8e91e849014276988565398cca775e')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-50@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Gavin Kovacek', 'example-50@railstutorial.org', '2012-01-12 19:45:13.769878', '2012-01-12 19:45:13.769878', 'ff1d612910c5532574dfab2224cd2b3fd3a434a590eeabdfac00fa50c109c196', '5641d75bf3a04b3c05e538f3c51c2c95ec8e91e849014276988565398cca775e')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-51@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.5ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Judge Keebler', 'example-51@railstutorial.org', '2012-01-12 19:45:13.943879', '2012-01-12 19:45:13.943879', 'ff1d612910c5532574dfab2224cd2b3fd3a434a590eeabdfac00fa50c109c196', '5641d75bf3a04b3c05e538f3c51c2c95ec8e91e849014276988565398cca775e')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-52@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Florian Doyle', 'example-52@railstutorial.org', '2012-01-12 19:45:14.067554', '2012-01-12 19:45:14.067554', '5a8925f6180428cf0ee860b65e7aa373bb484fb05c0c8288006f487c156f8ef9', 'da455054213711b954d477a37a78ea7f54112c16139d397fc45c6af63259bdeb')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-53@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.4ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Arjun Stroman', 'example-53@railstutorial.org', '2012-01-12 19:45:14.271043', '2012-01-12 19:45:14.271043', '5a8925f6180428cf0ee860b65e7aa373bb484fb05c0c8288006f487c156f8ef9', 'da455054213711b954d477a37a78ea7f54112c16139d397fc45c6af63259bdeb')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-54@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Mohammad Kihn III', 'example-54@railstutorial.org', '2012-01-12 19:45:14.351067', '2012-01-12 19:45:14.351067', '5a8925f6180428cf0ee860b65e7aa373bb484fb05c0c8288006f487c156f8ef9', 'da455054213711b954d477a37a78ea7f54112c16139d397fc45c6af63259bdeb')
+  [1m[36mSQL (1.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-55@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (6.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Cynthia Eichmann', 'example-55@railstutorial.org', '2012-01-12 19:45:14.611680', '2012-01-12 19:45:14.611680', '5a8925f6180428cf0ee860b65e7aa373bb484fb05c0c8288006f487c156f8ef9', 'da455054213711b954d477a37a78ea7f54112c16139d397fc45c6af63259bdeb')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-56@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Emie Harvey', 'example-56@railstutorial.org', '2012-01-12 19:45:14.768340', '2012-01-12 19:45:14.768340', '5a8925f6180428cf0ee860b65e7aa373bb484fb05c0c8288006f487c156f8ef9', 'da455054213711b954d477a37a78ea7f54112c16139d397fc45c6af63259bdeb')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-57@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Mrs. Elisha Zemlak', 'example-57@railstutorial.org', '2012-01-12 19:45:14.920823', '2012-01-12 19:45:14.920823', '5a8925f6180428cf0ee860b65e7aa373bb484fb05c0c8288006f487c156f8ef9', 'da455054213711b954d477a37a78ea7f54112c16139d397fc45c6af63259bdeb')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-58@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Sofia Prosacco', 'example-58@railstutorial.org', '2012-01-12 19:45:15.087454', '2012-01-12 19:45:15.087454', 'e1b4bb81cd6418b18cfc6035d275ab3dd37b6c955fd0ebb2a8739c64a569e356', '6f4d2e96a44d6c63086adc2c33e5a6b2977c10a1d66af2605aeb3487c82a8a87')
+  [1m[36mSQL (2.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-59@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (4.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Ms. Rosalinda Kertzmann', 'example-59@railstutorial.org', '2012-01-12 19:45:15.492415', '2012-01-12 19:45:15.492415', 'e1b4bb81cd6418b18cfc6035d275ab3dd37b6c955fd0ebb2a8739c64a569e356', '6f4d2e96a44d6c63086adc2c33e5a6b2977c10a1d66af2605aeb3487c82a8a87')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-60@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Selmer Hoppe', 'example-60@railstutorial.org', '2012-01-12 19:45:15.645989', '2012-01-12 19:45:15.645989', 'e1b4bb81cd6418b18cfc6035d275ab3dd37b6c955fd0ebb2a8739c64a569e356', '6f4d2e96a44d6c63086adc2c33e5a6b2977c10a1d66af2605aeb3487c82a8a87')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-61@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Missouri Blanda', 'example-61@railstutorial.org', '2012-01-12 19:45:15.844069', '2012-01-12 19:45:15.844069', 'e1b4bb81cd6418b18cfc6035d275ab3dd37b6c955fd0ebb2a8739c64a569e356', '6f4d2e96a44d6c63086adc2c33e5a6b2977c10a1d66af2605aeb3487c82a8a87')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-62@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.3ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Cyril Erdman', 'example-62@railstutorial.org', '2012-01-12 19:45:16.067085', '2012-01-12 19:45:16.067085', 'a791b58898a86206e09385fdc328396022907ed9f0b936f549bf683cfc774fe9', 'efc90a1fc468eb4035824009681faffc0deec5fa6f5e0163cc50d3794113b612')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-63@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Merritt Schultz Sr.', 'example-63@railstutorial.org', '2012-01-12 19:45:16.189777', '2012-01-12 19:45:16.189777', 'a791b58898a86206e09385fdc328396022907ed9f0b936f549bf683cfc774fe9', 'efc90a1fc468eb4035824009681faffc0deec5fa6f5e0163cc50d3794113b612')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-64@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Skylar Wyman MD', 'example-64@railstutorial.org', '2012-01-12 19:45:16.311278', '2012-01-12 19:45:16.311278', 'a791b58898a86206e09385fdc328396022907ed9f0b936f549bf683cfc774fe9', 'efc90a1fc468eb4035824009681faffc0deec5fa6f5e0163cc50d3794113b612')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-65@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.7ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Felton O''Conner', 'example-65@railstutorial.org', '2012-01-12 19:45:16.522044', '2012-01-12 19:45:16.522044', 'a791b58898a86206e09385fdc328396022907ed9f0b936f549bf683cfc774fe9', 'efc90a1fc468eb4035824009681faffc0deec5fa6f5e0163cc50d3794113b612')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-66@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Theodora Cassin MD', 'example-66@railstutorial.org', '2012-01-12 19:45:16.722804', '2012-01-12 19:45:16.722804', 'a791b58898a86206e09385fdc328396022907ed9f0b936f549bf683cfc774fe9', 'efc90a1fc468eb4035824009681faffc0deec5fa6f5e0163cc50d3794113b612')
+  [1m[36mSQL (1.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-67@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.7ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Dakota Muller', 'example-67@railstutorial.org', '2012-01-12 19:45:16.857171', '2012-01-12 19:45:16.857171', 'a791b58898a86206e09385fdc328396022907ed9f0b936f549bf683cfc774fe9', 'efc90a1fc468eb4035824009681faffc0deec5fa6f5e0163cc50d3794113b612')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-68@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (4.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Rafaela Quitzon', 'example-68@railstutorial.org', '2012-01-12 19:45:16.979467', '2012-01-12 19:45:16.979467', 'a791b58898a86206e09385fdc328396022907ed9f0b936f549bf683cfc774fe9', 'efc90a1fc468eb4035824009681faffc0deec5fa6f5e0163cc50d3794113b612')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-69@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Orpha Langworth', 'example-69@railstutorial.org', '2012-01-12 19:45:17.123358', '2012-01-12 19:45:17.123358', 'b44bae93a3ad423bcb25c4edd25111fce2f8417f0b2868b4b83ef3b76352b76e', 'b8ef89af20b9938a75263fad26c66692c5a181ba1a3b1754beac87f7b458081f')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-70@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Simeon Bartell', 'example-70@railstutorial.org', '2012-01-12 19:45:17.266509', '2012-01-12 19:45:17.266509', 'b44bae93a3ad423bcb25c4edd25111fce2f8417f0b2868b4b83ef3b76352b76e', 'b8ef89af20b9938a75263fad26c66692c5a181ba1a3b1754beac87f7b458081f')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-71@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Shany Champlin', 'example-71@railstutorial.org', '2012-01-12 19:45:17.388109', '2012-01-12 19:45:17.388109', 'b44bae93a3ad423bcb25c4edd25111fce2f8417f0b2868b4b83ef3b76352b76e', 'b8ef89af20b9938a75263fad26c66692c5a181ba1a3b1754beac87f7b458081f')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-72@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Shania Eichmann', 'example-72@railstutorial.org', '2012-01-12 19:45:17.630673', '2012-01-12 19:45:17.630673', 'b44bae93a3ad423bcb25c4edd25111fce2f8417f0b2868b4b83ef3b76352b76e', 'b8ef89af20b9938a75263fad26c66692c5a181ba1a3b1754beac87f7b458081f')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-73@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Lavada Hermann', 'example-73@railstutorial.org', '2012-01-12 19:45:17.775675', '2012-01-12 19:45:17.775675', 'b44bae93a3ad423bcb25c4edd25111fce2f8417f0b2868b4b83ef3b76352b76e', 'b8ef89af20b9938a75263fad26c66692c5a181ba1a3b1754beac87f7b458081f')
+  [1m[36mSQL (13.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-74@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (5.4ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Rhea Davis', 'example-74@railstutorial.org', '2012-01-12 19:45:17.898813', '2012-01-12 19:45:17.898813', 'b44bae93a3ad423bcb25c4edd25111fce2f8417f0b2868b4b83ef3b76352b76e', 'b8ef89af20b9938a75263fad26c66692c5a181ba1a3b1754beac87f7b458081f')
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-75@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Raphaelle Rempel', 'example-75@railstutorial.org', '2012-01-12 19:45:18.054520', '2012-01-12 19:45:18.054520', 'e6aae23118bce892b6683a2901c20b26fb05c90bba12ed1c5b5ad0e4edb4ddc9', 'e02bed51c370077cfa2378eadc623fe2136fbdd91e64a1e4aa9e9ba9e3749508')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-76@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Bartholome Reynolds', 'example-76@railstutorial.org', '2012-01-12 19:45:18.199532', '2012-01-12 19:45:18.199532', 'e6aae23118bce892b6683a2901c20b26fb05c90bba12ed1c5b5ad0e4edb4ddc9', 'e02bed51c370077cfa2378eadc623fe2136fbdd91e64a1e4aa9e9ba9e3749508')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-77@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Carolyn Wunsch', 'example-77@railstutorial.org', '2012-01-12 19:45:18.345031', '2012-01-12 19:45:18.345031', 'e6aae23118bce892b6683a2901c20b26fb05c90bba12ed1c5b5ad0e4edb4ddc9', 'e02bed51c370077cfa2378eadc623fe2136fbdd91e64a1e4aa9e9ba9e3749508')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-78@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.6ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Ines O''Connell', 'example-78@railstutorial.org', '2012-01-12 19:45:18.492317', '2012-01-12 19:45:18.492317', 'e6aae23118bce892b6683a2901c20b26fb05c90bba12ed1c5b5ad0e4edb4ddc9', 'e02bed51c370077cfa2378eadc623fe2136fbdd91e64a1e4aa9e9ba9e3749508')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-79@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Ms. Stan Denesik', 'example-79@railstutorial.org', '2012-01-12 19:45:18.620859', '2012-01-12 19:45:18.620859', 'e6aae23118bce892b6683a2901c20b26fb05c90bba12ed1c5b5ad0e4edb4ddc9', 'e02bed51c370077cfa2378eadc623fe2136fbdd91e64a1e4aa9e9ba9e3749508')
+  [1m[36mSQL (1.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-80@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Ford Ondricka', 'example-80@railstutorial.org', '2012-01-12 19:45:18.746610', '2012-01-12 19:45:18.746610', 'e6aae23118bce892b6683a2901c20b26fb05c90bba12ed1c5b5ad0e4edb4ddc9', 'e02bed51c370077cfa2378eadc623fe2136fbdd91e64a1e4aa9e9ba9e3749508')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-81@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (5.6ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Linwood Hermiston', 'example-81@railstutorial.org', '2012-01-12 19:45:18.883216', '2012-01-12 19:45:18.883216', 'e6aae23118bce892b6683a2901c20b26fb05c90bba12ed1c5b5ad0e4edb4ddc9', 'e02bed51c370077cfa2378eadc623fe2136fbdd91e64a1e4aa9e9ba9e3749508')
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-82@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.7ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Margarett Simonis', 'example-82@railstutorial.org', '2012-01-12 19:45:19.094194', '2012-01-12 19:45:19.094194', '4ae89a5e7db3691137e0204e51809139ef91d5a2f8bccd3d12078467ed1f8a31', 'e8c6f7d09564fc086b33e9a4434ead23793c237d66e1440e05a48b8bdd1a4f50')
+  [1m[36mSQL (1.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-83@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (5.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Germaine Cummings', 'example-83@railstutorial.org', '2012-01-12 19:45:19.234882', '2012-01-12 19:45:19.234882', '4ae89a5e7db3691137e0204e51809139ef91d5a2f8bccd3d12078467ed1f8a31', 'e8c6f7d09564fc086b33e9a4434ead23793c237d66e1440e05a48b8bdd1a4f50')
+  [1m[36mSQL (1.4ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-84@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Edythe Walker', 'example-84@railstutorial.org', '2012-01-12 19:45:19.411093', '2012-01-12 19:45:19.411093', '4ae89a5e7db3691137e0204e51809139ef91d5a2f8bccd3d12078467ed1f8a31', 'e8c6f7d09564fc086b33e9a4434ead23793c237d66e1440e05a48b8bdd1a4f50')
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-85@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Ima Cummerata', 'example-85@railstutorial.org', '2012-01-12 19:45:19.565831', '2012-01-12 19:45:19.565831', '4ae89a5e7db3691137e0204e51809139ef91d5a2f8bccd3d12078467ed1f8a31', 'e8c6f7d09564fc086b33e9a4434ead23793c237d66e1440e05a48b8bdd1a4f50')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-86@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Shana Stokes', 'example-86@railstutorial.org', '2012-01-12 19:45:19.723143', '2012-01-12 19:45:19.723143', '4ae89a5e7db3691137e0204e51809139ef91d5a2f8bccd3d12078467ed1f8a31', 'e8c6f7d09564fc086b33e9a4434ead23793c237d66e1440e05a48b8bdd1a4f50')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-87@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.3ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Crawford Hintz', 'example-87@railstutorial.org', '2012-01-12 19:45:19.876454', '2012-01-12 19:45:19.876454', '4ae89a5e7db3691137e0204e51809139ef91d5a2f8bccd3d12078467ed1f8a31', 'e8c6f7d09564fc086b33e9a4434ead23793c237d66e1440e05a48b8bdd1a4f50')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-88@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.4ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Roma Paucek', 'example-88@railstutorial.org', '2012-01-12 19:45:20.060385', '2012-01-12 19:45:20.060385', '3885c584b6c7ab867d867e836f59887864ae6e60d8ecb95c4724d7db05788df8', '3cd4224e44838856f8ffe6b10f30f5c01dcfbb6b1620d934bed7b269f72ebd41')
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-89@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (3.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Dr. Tate Fisher', 'example-89@railstutorial.org', '2012-01-12 19:45:20.254760', '2012-01-12 19:45:20.254760', '3885c584b6c7ab867d867e836f59887864ae6e60d8ecb95c4724d7db05788df8', '3cd4224e44838856f8ffe6b10f30f5c01dcfbb6b1620d934bed7b269f72ebd41')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-90@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (4.3ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Conrad Hessel', 'example-90@railstutorial.org', '2012-01-12 19:45:20.332578', '2012-01-12 19:45:20.332578', '3885c584b6c7ab867d867e836f59887864ae6e60d8ecb95c4724d7db05788df8', '3cd4224e44838856f8ffe6b10f30f5c01dcfbb6b1620d934bed7b269f72ebd41')
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-91@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Estell Hermiston', 'example-91@railstutorial.org', '2012-01-12 19:45:20.428102', '2012-01-12 19:45:20.428102', '3885c584b6c7ab867d867e836f59887864ae6e60d8ecb95c4724d7db05788df8', '3cd4224e44838856f8ffe6b10f30f5c01dcfbb6b1620d934bed7b269f72ebd41')
+  [1m[36mSQL (3.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-92@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Madison Brakus', 'example-92@railstutorial.org', '2012-01-12 19:45:20.567918', '2012-01-12 19:45:20.567918', '3885c584b6c7ab867d867e836f59887864ae6e60d8ecb95c4724d7db05788df8', '3cd4224e44838856f8ffe6b10f30f5c01dcfbb6b1620d934bed7b269f72ebd41')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-93@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Gilbert Bode', 'example-93@railstutorial.org', '2012-01-12 19:45:20.686412', '2012-01-12 19:45:20.686412', '3885c584b6c7ab867d867e836f59887864ae6e60d8ecb95c4724d7db05788df8', '3cd4224e44838856f8ffe6b10f30f5c01dcfbb6b1620d934bed7b269f72ebd41')
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-94@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.6ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Keenan Mayert', 'example-94@railstutorial.org', '2012-01-12 19:45:20.796001', '2012-01-12 19:45:20.796001', '3885c584b6c7ab867d867e836f59887864ae6e60d8ecb95c4724d7db05788df8', '3cd4224e44838856f8ffe6b10f30f5c01dcfbb6b1620d934bed7b269f72ebd41')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-95@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Miss Blaze Wintheiser', 'example-95@railstutorial.org', '2012-01-12 19:45:20.940622', '2012-01-12 19:45:20.940622', '3885c584b6c7ab867d867e836f59887864ae6e60d8ecb95c4724d7db05788df8', '3cd4224e44838856f8ffe6b10f30f5c01dcfbb6b1620d934bed7b269f72ebd41')
+  [1m[36mSQL (6.2ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-96@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (5.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Eleazar Kiehn', 'example-96@railstutorial.org', '2012-01-12 19:45:21.068336', '2012-01-12 19:45:21.068336', '25a37c37516587ada65fc8a5ef2afb99ffafddefdb8873352b7f09b3f2a9bbf9', 'e70fa8352ed32baa7afa4eb881799b2ddd4a2f35e0d66cc8b95d893bbd482972')
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-97@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (2.2ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Elias Emard', 'example-97@railstutorial.org', '2012-01-12 19:45:21.244024', '2012-01-12 19:45:21.244024', '25a37c37516587ada65fc8a5ef2afb99ffafddefdb8873352b7f09b3f2a9bbf9', 'e70fa8352ed32baa7afa4eb881799b2ddd4a2f35e0d66cc8b95d893bbd482972')
+  [1m[36mSQL (1.2ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-98@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Eudora Heidenreich', 'example-98@railstutorial.org', '2012-01-12 19:45:21.386679', '2012-01-12 19:45:21.386679', '25a37c37516587ada65fc8a5ef2afb99ffafddefdb8873352b7f09b3f2a9bbf9', 'e70fa8352ed32baa7afa4eb881799b2ddd4a2f35e0d66cc8b95d893bbd482972')
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example-99@railstutorial.org')) LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Trisha Hauck', 'example-99@railstutorial.org', '2012-01-12 19:45:21.564031', '2012-01-12 19:45:21.564031', '25a37c37516587ada65fc8a5ef2afb99ffafddefdb8873352b7f09b3f2a9bbf9', 'e70fa8352ed32baa7afa4eb881799b2ddd4a2f35e0d66cc8b95d893bbd482972')
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:46:08 +0300
+  Processing by UsersController#index as HTML
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 117ms
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 22:46:09 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (7.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_header.html.erb (102.3ms)
+Rendered layouts/_footer.html.erb (5.7ms)
+Rendered sessions/new.html.erb within layouts/application (328.9ms)
+Completed 200 OK in 347ms (Views: 341.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-12 22:46:28 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (3.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (4.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered layouts/_header.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (7.8ms)
+Rendered users/show.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 171ms (Views: 49.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2012-01-12 22:46:58 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered users/show.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 195ms (Views: 58.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 22:47:35 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (3.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (3.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_header.html.erb (132.5ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered pages/home.html.erb within layouts/application (159.7ms)
+Completed 200 OK in 173ms (Views: 167.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-01-12 22:47:40 +0300
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (2.3ms)
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Rendered layouts/_header.html.erb (21.9ms)
+Rendered layouts/_footer.html.erb (2.9ms)
+Rendered users/new.html.erb within layouts/application (154.7ms)
+Completed 200 OK in 220ms (Views: 166.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-01-12 22:48:03 +0300
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "user"=>{"name"=>"Alex Korzun", "email"=>"korzun.alex@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1[0m
+  [1m[35mAREL (3.5ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-12 19:48:04.028967', '2012-01-12 19:48:04.028967', 'a40974f8dfb74840c024a65f364e561fffb4ec789c35eb28b6ee322e081ba6a4', '86510f543a1f6fcce0afa604528840be3afbdb331299087300929071186a2651')
+Redirected to http://localhost:3000/users/101
+Completed 302 Found in 708ms
+
+
+Started GET "/users/101" for 127.0.0.1 at 2012-01-12 22:48:04 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (11.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+Rendered layouts/_header.html.erb (47.5ms)
+Rendered layouts/_footer.html.erb (17.8ms)
+Rendered users/show.html.erb within layouts/application (139.2ms)
+Completed 200 OK in 410ms (Views: 168.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:48:18 +0300
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+  [1m[35mUser Load (36.5ms)[0m  SELECT "users".* FROM "users"
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered users/index.html.erb within layouts/application (536.7ms)
+Completed 200 OK in 770ms (Views: 575.7ms | ActiveRecord: 37.0ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2012-01-12 22:49:19 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[35mUser Load (5.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+Rendered layouts/_header.html.erb (23.3ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered users/show.html.erb within layouts/application (48.2ms)
+Completed 200 OK in 334ms (Views: 54.5ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 22:57:22 +0300
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" LIMIT 30 OFFSET 0
+  [1m[36mSQL (1.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Rendered layouts/_stylesheets.html.erb (4.3ms)
+Rendered layouts/_header.html.erb (10.1ms)
+Rendered layouts/_footer.html.erb (1.3ms)
+Rendered users/index.html.erb within layouts/application (95.7ms)
+Completed 200 OK in 199ms (Views: 105.1ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/users?page=2" for 127.0.0.1 at 2012-01-12 22:57:33 +0300
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 30 OFFSET 30[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+Rendered layouts/_stylesheets.html.erb (4.3ms)
+Rendered layouts/_header.html.erb (7.4ms)
+Rendered layouts/_footer.html.erb (2.8ms)
+Rendered users/index.html.erb within layouts/application (91.3ms)
+Completed 200 OK in 201ms (Views: 114.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at 2012-01-12 22:57:41 +0300
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" LIMIT 30 OFFSET 90
+Rendered layouts/_stylesheets.html.erb (2.2ms)
+Rendered layouts/_header.html.erb (11.5ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered users/index.html.erb within layouts/application (78.7ms)
+Completed 200 OK in 315ms (Views: 97.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at 2012-01-12 23:15:55 +0300
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+  [1m[35mUser Load (1.9ms)[0m  SELECT "users".* FROM "users" LIMIT 30 OFFSET 90
+Rendered users/_user.html.erb (13.6ms)
+Rendered layouts/_stylesheets.html.erb (4.3ms)
+Rendered layouts/_header.html.erb (10.1ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered users/index.html.erb within layouts/application (60.9ms)
+Completed 200 OK in 164ms (Views: 73.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2012-01-12 23:16:00 +0300
+  Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+  [1m[35mUser Load (6.2ms)[0m  SELECT "users".* FROM "users" LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Rendered users/_user.html.erb (57.8ms)
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+Rendered layouts/_header.html.erb (7.6ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered users/index.html.erb within layouts/application (101.6ms)
+Completed 200 OK in 355ms (Views: 113.0ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/users/101/edit" for 127.0.0.1 at 2012-01-12 23:16:21 +0300
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"101"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (2.8ms)
+Rendered layouts/_stylesheets.html.erb (4.1ms)
+Rendered layouts/_header.html.erb (7.0ms)
+Rendered layouts/_footer.html.erb (3.2ms)
+Rendered users/edit.html.erb within layouts/application (60.9ms)
+Completed 200 OK in 197ms (Views: 73.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/101" for 127.0.0.1 at 2012-01-12 23:16:32 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[35mUser Load (1.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+Rendered layouts/_header.html.erb (10.9ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered users/show.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 165ms (Views: 58.1ms | ActiveRecord: 1.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mSQL (2.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.6ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20120105131521)
+Migrating to AddEmailUniquenessIndex (20120105162911)
+Migrating to AddPasswordToUsers (20120108153636)
+Migrating to AddSaltToUsers (20120108180614)
+Migrating to AddAdminToUsers (20120112202129)
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (4.3ms)[0m  [1mALTER TABLE "users" ADD "admin" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120112202129')
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.4ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mSQL (3.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.5ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (219.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "admin" boolean DEFAULT 'f') 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (142.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (167.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35mSQL (117.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (118.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120112202129')[0m
+  [1m[35mSQL (111.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120105162911')
+  [1m[36mSQL (142.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120108180614')[0m
+  [1m[35mSQL (143.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120105131521')
+  [1m[36mSQL (132.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120108153636')[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mSQL (1.8ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (4.9ms)[0m  [1mUPDATE "users" SET "admin" = 't', "updated_at" = '2012-01-12 20:27:25.140314' WHERE "users"."id" = 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+  [1m[36mSQL (2.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (290.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "admin" boolean DEFAULT 'f') [0m
+  [1m[35mSQL (0.4ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (174.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (188.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (121.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mSQL (183.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120112202129')
+  [1m[36mSQL (145.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120105162911')[0m
+  [1m[35mSQL (146.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120108180614')
+  [1m[36mSQL (175.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120105131521')[0m
+  [1m[35mSQL (102.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120108153636')
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('korzun.alex@mail.ru')) LIMIT 1
+  [1m[36mAREL (3.6ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "admin") VALUES ('Alex Korzun', 'korzun.alex@mail.ru', '2012-01-12 20:34:52.387307', '2012-01-12 20:34:52.387307', '67f6b3f26dc02efe42a67f579fecb93e9a312401f63c755424c96e015895a892', 'efbab8a194abe9b12699f6d20d9653fd42337e329742bf571185d40d46b06584', 'f')[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/student/rails_projects/my_programm/config/environment.rb:5)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 23:41:03 +0300
+  Processing by UsersController#index as HTML
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 117ms
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 23:41:04 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (11.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+Rendered layouts/_header.html.erb (77.7ms)
+Rendered layouts/_footer.html.erb (5.8ms)
+Rendered sessions/new.html.erb within layouts/application (335.1ms)
+Completed 200 OK in 353ms (Views: 347.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-01-12 23:41:18 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+  [1m[35mUser Load (6.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+Rendered layouts/_header.html.erb (22.7ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered users/show.html.erb within layouts/application (73.3ms)
+Completed 200 OK in 253ms (Views: 80.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 23:41:26 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (3.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+Rendered layouts/_header.html.erb (348.4ms)
+Rendered layouts/_footer.html.erb (8.3ms)
+Rendered sessions/new.html.erb within layouts/application (399.4ms)
+Completed 200 OK in 457ms (Views: 446.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-01-12 23:41:42 +0300
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cj7XH3vcvOgFphCJkkVB2kub3V20qqfw+xNA9PDZHlI=", "session"=>{"email"=>"korzun.alex@mail.ru", "pasword"=>"foobar"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'korzun.alex@mail.ru' LIMIT 1
+Rendered layouts/_stylesheets.html.erb (2.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+  [1m[35mCACHE (4.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+Rendered layouts/_header.html.erb (16.4ms)
+Rendered layouts/_footer.html.erb (2.3ms)
+Rendered sessions/new.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 347ms (Views: 75.7ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 23:41:55 +0300
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (8.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+Rendered layouts/_header.html.erb (197.7ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered pages/home.html.erb within layouts/application (232.1ms)
+Completed 200 OK in 245ms (Views: 243.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2012-01-12 23:42:07 +0300
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 150ms
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 23:42:07 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (16.2ms)
+  [1m[35mUser Load (5.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+Rendered layouts/_header.html.erb (343.8ms)
+Rendered layouts/_footer.html.erb (4.2ms)
+Rendered sessions/new.html.erb within layouts/application (431.7ms)
+Completed 200 OK in 453ms (Views: 445.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2012-01-12 23:42:22 +0300
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+Completed 404 Not Found in 91ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=3):
+  app/controllers/users_controller.rb:16:in `show'
+
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.5ms)
+Rendered /home/student/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-12 23:42:37 +0300
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 109ms
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-01-12 23:42:38 +0300
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (4.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 101 LIMIT 1[0m
+Rendered layouts/_header.html.erb (93.3ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered sessions/new.html.erb within layouts/application (135.2ms)
+Completed 200 OK in 150ms (Views: 148.8ms | ActiveRecord: 0.4ms)
